@@ -1,0 +1,42 @@
+\centering
+\begin{tikzpicture}
+    \begin{axis}[
+      %title={Evolution of student participation for each exercise},
+      enlarge y limits=false,
+      enlarge x limits=-1,
+      height=6cm,
+      width=14.5cm,
+      axis lines*=left,
+      xlabel={Age group},
+      ylabel={Prod. (success rate/selection time)},
+      %xmin=1, xmax=4,
+      ymin=30, ymax=55,
+      xtick=data,
+      ytick={30,35,40,45,50,55},
+      legend pos=east,
+      legend columns=0,
+      %xmajorgrids=true,
+      ymajorgrids=true,
+      grid style=dashed,
+      enlargelimits=0.15,
+      %histogram related :
+      ybar,
+      symbolic x coords={<25, 25-40, >40 years old},
+      nodes near coords,
+      every node near coord/.append style={
+	  /pgf/number format/fixed zerofill,
+	  /pgf/number format/precision=1
+      }
+      ]
+      
+    \addplot coordinates
+    {(<25,49.155) (25-40, 46.329) (>40 years old, 33.903)};
+    \addplot coordinates
+    {(<25,53.150) (25-40, 45.827) (>40 years old, 31.399)};
+    
+    \legend{Men, Women}
+    
+    \end{axis}
+  \end{tikzpicture}
+  \caption{Productivity ratio according to the age group and the gender 
+distinction.}

@@ -1,0 +1,442 @@
+\chapter{Methodology}
+
+The methodology is mainly inspired by the related researches described in the 
+state of the art. A set of 11 hypotheses are described and argued based on the 
+learning outcomes of the previous chapter. Then the experimental method that 
+aims at confirming or reversing these hypotheses is deeply reviewed. Finally 
+the related implementation is reported for computer scientists’ interests.
+
+\section{Hypotheses} \label{hypotheses}
+
+A set of 11 hypotheses have been initially formulated. Each hypothesis is based 
+on one or 
+several learning outcomes from one or several authors. The objective is to 
+study the field of research even further than the previous experiments. The 
+hypotheses will be later confirmed or reversed by the experiment. Some new 
+hypotheses may even be formulated afterwards with respect to the results of the 
+experiment.
+
+\begin{itemize}
+ \item \textbf{H1a:} the split menu reduces the selection time.
+ \item \textbf{H1b:} the split menu is preferred 
+by users.
+\end{itemize}
+
+\textsc{Sears} and \textsc{Shneiderman} proved that a split menu following a 
+strict set of 
+guidelines could be beneficial for both user experience and user performance. 
+Therefore a menu providing a hot list of items based on frequency reordering 
+should indeed reduce selection time and receive a higher user 
+preference.
+
+\begin{itemize}
+  \item \textbf{H2a:} the minimised menu reduces the selection time.
+  \item \textbf{H2b:} the minimised menu is preferred by users.
+\end{itemize}
+
+Khalid \textsc{Al-Omar} and Dimitrios \textsc{Rigas} identified a clear user 
+preference for their 
+minimised menu. Such a menu hides unwanted items and therefore reduces the 
+number of items displayed on the screen. This is very related to the 
+\textit{rules of ergonomy} taught by Professor Jean Vanderdonckt in his course 
+entitled \enquote{human-computer interaction} at Univeristé Catholique de 
+Louvain. One HCI rule called \enquote{rule of thumb} states that an 
+interface should display a minimum of 4 items and a maximum of 8. Unfortunately 
+this rule is still neglected by researchers. The idea is to implement a menu 
+which displays a restricted number of items at the same time. It should be 
+easier to read and manipulate for users, especially for novice ones.
+
+\begin{itemize}
+  \item \textbf{H3a:} the responsive menu reduces the selection time.
+  \item \textbf{H3b:} the responsive menu is preferred by users.
+\end{itemize}
+
+Yusuke \textsc{Fukazawa} studied the effects of menu organization with a 
+specific focus 
+towards small mobile screens. He proved that a responsive menu organization 
+could be beneficial for user experience. Unfortunately his work must still be 
+argued by further experiments. Since this master thesis aims at establishing 
+guidelines for designing menus on smartphones, it is necessary to include his 
+findings in the experimental method. Therefore a responsive menu has to be 
+designed and tested.
+
+\begin{itemize}
+  \item \textbf{H4a:} novice users show a preference for the adaptive menus.
+  \item \textbf{H4b:} master users show a preference for the traditional menu.
+\end{itemize}
+
+Yusuke \textsc{Fukazawa} found out that \textit{master users} preferred to have 
+more 
+control over menu customization and preferred to be less guided by the system. 
+Therefore they showed higher preferences for traditional and adaptable menus 
+because they are respectively use to it and user-controlled. Our experiment is 
+mainly focused towards adaptive menus and master users should therefore show a 
+preference for traditional menu organizations only. At the opposite, 
+\textit{novice users} showed higher preferences for adaptive menus which prove 
+the system ability to handle menu customization by itself. They should show the 
+same preferences during our experiment.
+
+\begin{itemize}
+  \item \textbf{H5a:} guidance informations help users to understand how a 
+menu 
+works.
+  \item \textbf{H5b:} guidance informations help users to handle a menu more 
+efficiently.
+  \item \textbf{H5c:} a period of adjustment helps users to handle a menu more 
+efficiently.
+\end{itemize}
+
+Khalid \textsc{Al-Omar} and Dimitrios \textsc{Rigas} proved that users needed 
+both \textit{guidance informations} and a \textit{period of adjustment} in 
+order to 
+handle and understand new menu organizations, especially for adaptable menus. 
+The experiment should however provide the same results for adaptive menus since 
+they still represent new menu organizations for users. Notice that 
+\textsc{Somberg}  
+and \textsc{Sears} and \textsc{Shneiderman} also observed that a period of 
+adjustment was 
+beneficial for user performance.
+
+\section{Experimental method}
+The experimental method aims at confirming or reversing the hypotheses. In 
+order to achieve this objective, 8 menu organizations have been designed and 
+implemented in an Android application developed especially for the 
+experiment. This subsection argues the choices performed during the development 
+of the experimental method. It also describes its overall operation.
+
+\subsection{Test protocol} \label{test_protocol}
+Participants were first asked to answer a preliminary set of sociodemograhic 
+questions on a survey paper. A paper version was decided to be used. It allows 
+users to avoid to get distracted by a second screen. The survey is available at 
+the end of the 
+dissertation, see Appendix \ref{survey}. Users were then asked to perform 2 
+kinds of sessions on the Android application. The first sessions were called 
+\textit{training sessions} - or \textit{adjustment periods} in reference to 
+\textsc{Somberg}' study \cite{somberg}. Each training session last for 2 
+consecutive 
+selections and was preceded by guidance informations. For each selection, the 
+system was randomly choosing an item and was displaying this choice on the 
+screen. Once the menu was displayed, the participant had to click on the 
+required item. Guidance informations were used to help users to understand the 
+following menu organization. A second set of sessions was organized after the 8 
+training sessions. These new sessions were called \textit{evaluation sessions} 
+and last for 10 consecutive selections. An evaluation session was not preceded 
+by guidance informations but was followed by a set of questions to answer on 
+the survey paper. These questions were used to assess the usability of the menu 
+organization and gather user's feedback. During the evaluation sessions, 6 
+parameters were recorded for each selection: (1) the the required item, (2) 
+its 
+position in the menu, (3) the selected item, (4) its position in the menu, (5) 
+the selection time and (6) the correctness of the selection.
+
+\subsection{Items}
+The items displayed by the Android application have been selected from a 
+controlled experiment conducted by \textsc{Findlater} \cite{findlater}. This 
+experiment 
+used 16 items divided into 4 specific categories. Notice that Khalid 
+\textsc{Al-Omar} and 
+Dimitrios \textsc{Rigas} considered such a menu as a \textit{small} one during 
+their own 
+study \cite{alomar1}. Figure \ref{fig:items} depicts the categories of items 
+described by \textsc{Findlater} and used during the experiment.\newline
+
+\begin{figure}[!ht]
+    \include{tikz/items}
+    \label{fig:items}
+\end{figure}
+
+\subsection{Control condition menu}
+A control condition menu stands as baseline to perform the comparison between a 
+set of menu organizations. For this experiment, a traditional vertical menu 
+was chosen to be the control condition menu. It consisted of a 1-column menu 
+which displayed the items in categorical order such that wines were grouped 
+together, followed by planets, countries and dried fruits in the order 
+displayed 
+by Figure \ref{fig:items}.
+%The control 
+%condition menu organization is depicted by Figure \ref{fig:control_menu}.
+
+% \begin{figure}[!ht]
+%     \include{tikz/control_menu}
+%     \label{fig:control_menu}
+% \end{figure}
+
+\subsection{Split menu}
+We followed the guidelines described by \textsc{Sears} and \textsc{Shneiderman} 
+in order to 
+confirm the hypotheses related to the split menu. Indeed both authors defined a 
+strict set of guidelines to design efficient split menus. As explained 
+previously, these guidelines are based on 3 preliminary observations: (1) 
+users know the name of the item they are looking for, (2) some items are 
+more frequently selected than others and (3) these most frequent items are 
+ideally not already located at the top of the menu. These preliminary 
+observations are met during the experiment because users have to select items 
+that are chosen and displayed by the system. \textsc{Sears} and 
+\textsc{Shneiderman} developed 3 
+guidelines based on these observations: (1) both the hot list and the 
+traditional section should respect the traditional ordering, (2) the hot list 
+should not display more than 4 items and (3) the hot list should only display 
+the most frequently selected items.\newline
+
+For the experiment purpose, the hot list was decided to hold 3 items as 
+\textsc{Findlater} used during his own study \cite{findlater}. The hot list was 
+also 
+decided to be highlighted. Therefore the background of the hot list items was 
+displayed in a dark blue colour called \textit{primary colour} in the initial 
+Android theme.
+
+\subsection{Minimised menu}
+Traditional menus display the entire set of items at the same time. Users 
+usually require to scroll down the menu to show the last items. Minimised menu 
+aims at reducing the number of displayed items. Following the \textit{rule of 
+thumb} described in the section \ref{hypotheses}, we designed a menu divided 
+into consecutive and distinct \textit{pages}. Each page displays at most 8 
+items. Since our initial set of items is made of 16 items, each menu 
+organization is divided into 2 pages of exactly 8 items.
+
+\subsection{Responsive menu}
+The main objective of a responsive menu is to adapt the menu organization to 
+the small size of mobile screens. The idea is to reduce both the size of 
+displayed items and the margins in between these items. Sometimes it also 
+consists of 
+reducing the number of displayed items but we already implemented this 
+opportunity with minimised menus. The responsive menu implemented for the 
+experiment is designed with 2 columns of items. The first item is displayed in 
+the top left column, the second one is displayed in the top right column and so 
+on for the next items.
+
+\subsection{Mixed-initiative menus}
+Khalid \textsc{Al-Omar} and Dimitrios \textsc{Rigas} defined a 
+\textit{mixed-initiative} menu as 
+a menu that combines both adaptive and adaptable properties. During the 
+experiment, a mixed-initiative menu was a menu organization combining split, 
+minimised and/or responsive properties. Therefore 2x2x2 menu organizations have 
+been designed to implement all the potential combinations of 
+menus. These configurations are described in the following section and 
+screenshots from the Android application are provided to better visualize the 
+different menu organizations, see Appendix \ref{screenshots}.
+
+\section{Implementation}
+
+An Android application called \textit{Menuz} was implemented to conduct the 
+experiment. The application was responsible for displaying the menus and 
+providing their guidance informations. It was also designed to act as a guide 
+during the experiment and therefore to give relevant directives to the 
+participants. This subsection describes the architecture and choices performed 
+during its implementation. Screenshots of the application are provided by 
+Appendix \ref{screenshots}.
+
+\subsection{Application architecture}
+
+The Android application was developed with \textit{Android Studio}. It is 
+divided into 13 activities, 13 related XML layouts and Java classes, and one 
+additional Java class for utility purpose. An android activity takes care of 
+creating a window. It is first described by a XML layout in which Android 
+components are assembled to form its UI. An additional Java class must also be 
+implemented for each activity. This class allows to manage the activity 
+lifecycle but also to react to user’s actions through listeners. Figure 
+\ref{fig:activity} illustrates the concept of activity through the combination 
+of an XML layout and a Java class.\newline
+
+\begin{figure}[!ht]
+    \include{tikz/activity}
+    \label{fig:activity}
+\end{figure}
+
+The entire application architecture is depicted by Figure 
+\ref{fig:architecture}. The first activity is called \textit{MainActivity}. It 
+welcomes the user and requires him to enter a username before starting the 
+experiment. This first window is followed by an activity called 
+\textit{IntroductionActivity} which introduces the course of the experiment. 
+The 
+user then receives the guidance informations of the first menu. Guidance 
+informations are provided by an activity called 
+\textit{MenuIntroductionActivity}. Its purpose is to introduce 
+the new menu organizations to the subjects of the experiment. It leads to a 
+fourth activity called \textit{NextSelectionActivity} which chooses a random 
+item to be picked by the users. It also contains a selection counter to show 
+the experiment progress. The selection timer starts when the participant has 
+pushed on the \enquote{ready} button and the menu has been entirely displayed on 
+the screen. Each menu is designed to be a distinct activity. The activity is 
+stopped when the user has performed a selection and the 
+\textit{NextSelectionActivity} is called upon to display the next required item. 
+The process is repeated until the 8 training sessions and the 8 evaluation 
+sessions have been successfully achieved. Notice that a fifth activity called 
+\textit{SurveyRequestActivity} is started at the end of each evaluation session 
+to recall the user that he must answer a set of questions on the survey paper. 
+During these evaluation sessions, \textit{MenuIntroductionActivity} doesn't 
+display guidance informations anymore but acts as an intermediary window to 
+announce the start of the next evaluation session. Finally, a class called 
+\textit{Utility} was implemented to allow developers to set up the experiment 
+from one single file.\newline
+
+\begin{figure}[!ht]
+    \include{tikz/architecture}
+    \label{fig:architecture}
+\end{figure}
+
+\subsection{Activities}
+
+This second subsection describes in details the operation and content 
+implemented in the 13 activities and the additional \textit{Utility} class of 
+the Android application.
+
+\subsubsection{MainActivity}
+\textit{MainActivity.java} is the first activity called at the start of the 
+application. The window is made of a \textit{TextView}, an \textit{EditText} 
+and a \textit{Button}. The \textit{TextView} is an interface element that 
+displays text to the user \cite{android_textview}. In this case, it is 
+used to welcome the user to the application. The \textit{EditText} is 
+a UI element for entering and modifying text \cite{android_edittext}. It is 
+used 
+to enter a username that will be saved when the user presses the button. Notice 
+that a \textit{cheatcode} can be used to jump directly to a specific menu 
+organization. The cheatcode must start with the \enquote{\#} character and must 
+be followed by the id of the menu organization. In this case, the participant 
+will be redirected to the \textit{MenuIntroductionActivity} which announces the 
+start of the corresponding evaluation session.
+
+\subsubsection{IntroductionActivity}
+This second activity is started by \textit{MainActivity}. It is made of 5 
+\textit{TextView} widgets and a \textit{Button}. Each \textit{TextView} is used 
+as a title or as a paragraph and aims at introducing the course of the 
+experiment and its overall operation to the user.
+
+\subsubsection{MenuIntroductionActivity}
+\textit{MenuIntroductionActivity} is called at the beginning of each session. 
+Before a training session, it provides guidance informations about the next 
+menu organization. Before an evaluation session, it is only used as an 
+intermediary window to announce to the subject that a new evaluation session 
+is about to start. The XML layout is made of 3 \textit{TextView} and 1 
+\textit{Button}. The third \textit{TextView} is hidden before an evaluation 
+session because there is only one sentence to display.\newline
+
+The activity is also responsible to reset the \textit{parameter arrays} and 
+the \textit{selection counter}. A \textit{parameter array} is a Java array used 
+to store the values recorded during the experiment. There are 6 interesting 
+parameters to monitor for the experiment purpose: (1) required items, (2) 
+position of the required items, (3) selected items, (4) position of the 
+selected 
+items, (5) selection time and (6) correctness of the selection. The 6th 
+parameter is not recorded as an array. It is measured later by the 
+\textit{Utility} class. \textit{MenuIntroductionActivity} must also reset the 
+\textit{selection counter} since it is called before the start of a new 
+session. 
+Finally it must increment the \textit{menu counter}.
+
+\subsubsection{NextSelectionActivity}
+\textit{NextSelectionActivity} is an activity called before a selection must 
+be performed. It is responsible for choosing the next required item, 
+displaying this choice on the screen and starting the appropriate menu 
+organization when the user presses the \enquote{ready} button. Items are 
+selected by following the approach taken by \textsc{Findlater} \cite{findlater} 
+: a ZipF 
+distribution (Zpifian $R^2=.99$) over 8 randomly chosen items for each menu 
+organization to avoid the learning effect between sessions. Zipf's law is an 
+empirical law concerning the frequency of words in a language. It was developed 
+by the Americain linguist George Kingsley Zipf and refers to the fact that some 
+words are more frequently used than others and such that their selection 
+frequencies can be approximated with a Zipfian distribution.\newline
+
+The activity is made of 1 \textit{Button} and 4 \textit{TextView}. The 1st 
+\textit{TextView} corresponds to the title, the second one to a directive, the 
+3rd one is responsible for displaying the required item and the 4th one
+consists of a counter which represents the progress of the experiment.
+
+\subsubsection{Activities related to menu organizations}
+As explained previously, 2x2x2 menu organizations were implemented for the 
+experiment. Each menu organization represents a control condition menu, a 
+minimised menu, a responsive menu or a mixed-initiative menu. A 
+mixed-initiative menu is the result of the combination between one or several 
+types of menu among split, minimised and/or responsive.\newline
+
+Each menu organization was designed to be a distinct activity. Two initial 
+methods are required for these activities. The first one, called 
+\textit{onCreate()}, is responsible for providing relevant directives in 
+order to create the window. It displays the menu according to the XML layout 
+and may eventually apply a few modifications if required. The second 
+method, called \textit{selectionPerformed()}, is caled when a user chooses an 
+item in the menu. It is responsible for calling the \textit{Utility} class 
+that will save the relevant parameters and redirect the user to the next 
+activity.\newline
+
+\textbf{MenuActivity} represents the control condition menu. It is made of 
+one column within which all items are displayed vertically. Users require to 
+scroll down the menu to see the last items. It comprises the most basic 
+implementation of both methods \textit{onCreate()} and 
+\textit{selectionPerformed()}.\newline
+
+\textbf{MinimisedMenuActivity} carries a self-descriptive name. It 
+represents the minimised menu organization. It consists of a vertical menu 
+divided into 2 pages. Each page is made of 2 categories of 4 items and no 
+scrolling is required to see the last items of a page. A page is 
+also accessible through \enquote{previous/next} arrows respectively located in 
+the bottom left and bottom right corner of the menu organization. The previous 
+or next arrows are only displayed if respectively a previous or a next page 
+is available. Two additional methods have been implemented to handle these 
+buttons. They are respectively called \textit{previousProposals()} and 
+\textit{nextProposals()}.\newline
+
+\textbf{SplitMenuActivity} represents a split menu organization. It is very 
+similar to \textit{MenuActivity}. Indeed it corresponds to a 
+vertical menu but it displays the 3 most frequent items at the top of it. These 
+items are highlighted with a blue colour and highlightings are handled by the 
+method \textit{onCreate()}.\newline
+
+\textbf{MinimisedSplitMenuActivity} corresponds to the first 
+mixed-initiative menu presented to a participant. It combines both 
+minimised and split menu properties. Therefore it consists of a menu 
+divided into 2 pages such that each page displays 8 items and the first 
+page displays the 3 most frequently selected items at the top of the menu. 
+These items are also highlighted with a blue colour and no scrolling is 
+required to see the last items of a page. It is implemented with the 
+additional methods \textit{previousProposals()} and 
+\textit{nextProposals()}. Highlightings are handled by these methods 
+and the method \textit{onCreate()}.\newline
+
+\textbf{ResponsiveMenuActivity} represents a responsive menu 
+organization. It consists of a menu divided into 2 columns within 
+which the items are displayed opposite to each others. This mixed-initiative 
+menu allows to display all the items on the screen of the smartphone used 
+during the experiment. Therefore no scrolling is required to see the last 
+items.\newline
+
+\textbf{ResponsiveSplitMenuActivity} combines responsive and split menu 
+properties. It is very similar to \textit{ResponsiveMenuActivity} but 
+it displays the 3 most frequently selected items at the top of the menu. These 
+items are highlighted with a blue colour and highlightings are handled by the 
+method \textit{onCreate()}.\newline
+
+\textbf{MinimisedResponsiveMenuActivity} is a mixed-initiative menu 
+that combines minimised and responsive menu properties. It is divided 
+into 2 pages such that each page is itself divided into 2 columns 
+within which the items are displayed opposite to each other. Each page is made 
+of 2 categories of 4 items and is accessible through \enquote{previous/next} 
+arrows. The additional methods \textit{previousProposals()} and 
+\textit{nextProposals()} have been implemented to handle these buttons. 
+Notice that the arrows are only displayed if necessary.\newline
+
+\textbf{MinimisedResponsiveSplitMenuActivity} represents the 
+combination of minimised, responsive and split menu properties. 
+Therefore it is very similar to \textit{MinimisedResponsiveMenuActivity} 
+but it displays the 3 most frequently selected items at the top of the menu for 
+the first page only. These items are highlighted with a blue colour and the 
+highlightings are handled by the methods \textit{onCreate()}, 
+\textit{previousProposals()} and \textit{nextProposals()}.
+
+\subsubsection{SurveyRequestActivity}
+\textit{SurveyRequestActivity} is an activity called at the end of an 
+evaluation session by the \textit{Utility} class. It is used to recall the user 
+that he must answer a set of questions on the survey paper, or to announce the 
+end of the experiment and thank him for its participation. The UI is made of 3 
+\textit{TextView} and 1 \textit{Button}. At the end of all evaluation 
+sessions, the button redirects the user to the \textit{MainActivity}. Otherwise 
+it redirects the user to the next \textit{MenuIntroductionActivity}.
+
+\subsubsection{Utility}
+As described previously, \textit{Utility} is not an Android activity but a 
+traditional Java class instead. It is used to set up the experiment from one 
+single file. For example, a developer can modify the length of the sessions, 
+update the list of items or even change the way parameters are gathered and 
+printed. The class is essential for the application and almost all classes call 
+one of its methods at some point.

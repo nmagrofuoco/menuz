@@ -1,0 +1,85 @@
+<resources>
+    <!--<string name="app_name">Menuz</string>
+    <string name="welcome_participant">Welcome dear guest!</string>
+    <string name="button_start">Start the experiment</string>
+    <string name="plaintext_editparticipant">Enter a username</string>
+
+    <string name="button_go">Ready</string>
+    <string name="button_ok">Got it!</string>
+    <string name="id_nextword">The next selection is:</string>
+    <string name="id_evaluationstarts">The evaluation session starts now and will last for 10 selections:</string>
+    <string name="button_firstnext">Go to the first menu</string>
+    <string name="button_nextmenu">Go to the next menu</string>
+
+    <string name="id_introduction1">Welcome to Menuz!</string>
+    <string name="id_introduction2">This application was developed by Nathan Magrofuoco for his master thesis at Louvain School of Management (LSM, UCL). It follows the objective of assessing user experience with 8 distinct menus.</string>
+    <string name="id_introduction3">The experiment will be marked out by \"selections\" : we will propose you an item and you will have to find it in the displayed menu.</string>
+    <string name="id_introduction4">The 8 menus will be explained individually before use. You will first proceed to a training session for each menu. A training session last for 2 selections.</string>
+    <string name="id_introduction5">Then you will proceed to an evaluation session for each menu. An evaluation session last for 10 selections. No need to rush between these selections, your performance is not evaluated until you have pressed the \"Ready\" button.</string>
+
+    <string name="id_menu">Menu 1/8</string>
+    <string name="id_menu_introduction1">There are 4 categories of 4 items. The items are displayed vertically, but all items cannot be seen at first sight.</string>
+    <string name="id_menu_introduction2">In order to see the lower items, scroll down the menu with your finger by practicing a movement from bottom to top.</string>
+
+    <string name="id_paginatedmenu">Menu 2/8</string>
+    <string name="id_paginatedmenu_introduction1">There are 4 categories of 4 items. The items are distributed among 2 pages within which they are displayed vertically.</string>
+    <string name="id_paginatedmenu_introduction2">Each page is navigable with \"previous/next\" arrows. Only 2 categories of 4 items can be seen on the first page. Use the arrow located in the bottom of the menu to display the second page.</string>
+
+    <string name="id_splitmenu">Menu 3/8</string>
+    <string name="id_splitmenu_introduction1">There are 4 categories of 4 items. The items are displayed vertically, but all items cannot be seen at first sight and the first 3 items are highlighted by a blue colour. They represent the 3 most frequently selected items. This list of items will get modified throughout the experiment and your selections.</string>
+    <string name="id_splitmenu_introduction2">In order to see the lower items, scroll down the menu with your finger by practicing a movement from bottom to top.</string>
+
+    <string name="id_paginatedsplitmenu">Menu 4/8</string>
+    <string name="id_paginatedsplitmenu_introduction1">There are 4 categories of 4 items. The items are distributed among 2 pages within which they are displayed vertically. The first page also displays the 3 most frequently selected items, highlighted by a blue colour. This list of items will get modified throughout the experiment and your selections.</string>
+    <string name="id_paginatedsplitmenu_introduction2">Each page is navigable with \"previous/next\" arrows. Only 8 items can be seen on the first page. Use the arrow located in the bottom of the menu to display the second page.</string>
+
+    <string name="id_multicolmenu">Menu 5/8</string>
+    <string name="id_multicolmenu_introduction1">There are 4 categories of 4 items. The items are distributed among 2 columns within which they are displayed opposite to each other.</string>
+    <string name="id_multicolmenu_introduction2">With this new distribution, all items can be displayed on the screen.</string>
+
+    <string name="id_multicolpaginatedmenu">Menu 6/8</string>
+    <string name="id_multicolpaginatedmenu_introduction1">There are 4 categories of 4 items. The items are distributed among 2 pages. Each page distributes the items in 2 columns within which they are displayed opposite to each other.</string>
+    <string name="id_multicolpaginatedmenu_introduction2">Each page is navigable with \"previous/next\" arrows. Only 2 categories of 4 items can be seen on the first page. Use the arrow located in the bottom of the menu to display the second page.</string>
+
+    <string name="id_multicolsplitmenu">Menu 7/8</string>
+    <string name="id_multicolsplitmenu_introduction1">There are 4 categories of 4 items. The items are distributed among 2 columns within which they are displayed opposite to each other. The first 3 items are highlighted by a blue colour. They represent the 3 most frequently selected items. This list of items will get modified throughout the experiment en your selections.</string>
+    <string name="id_multicolsplitmenu_introduction2">With this new distribution, all items can be displayed on the screen.</string>
+
+    <string name="id_multicolpaginatedsplitmenu">Menu 8/8</string>
+    <string name="id_multicolpaginatedsplitmenu_introduction1">There are 4 categories of 4 items. The items are distributed among 2 pages. Each page distributes the items in 2 columns within which they are displayed opposite to each other. The first page also displays the 3 most frequently selected items, highlighted by a blue colour. This list of items will get modified throughout the experiment and your selections.</string>
+    <string name="id_multicolpaginatedsplitmenu_introduction2">Each page is navigable with \"previous/next\" arrows. Only 8 items can be seen on the first page. Use the arrow located in the bottom of the menu to display the second page.</string>
+
+    <string name="id_menu_evaluation_introduction1">The first evaluation session is about to start.</string>
+    <string name="id_menu_evaluation_introduction2">The next evaluation session is about to start.</string>
+
+    <string name="id_previous">&lt;</string>
+    <string name="id_next">&gt;</string>
+
+    <string name="id_trainingsession">Training session</string>
+    <string name="id_evaluationsession">Evaluation session</string>
+
+    <string name="color_silver">Merlot</string>
+    <string name="color_white">Shiraz</string>
+    <string name="color_blue">Chardonnay</string>
+    <string name="color_bordeaux">Cabernet</string>
+    <string name="color_brown">Saturn</string>
+    <string name="color_grey">Venus</string>
+    <string name="color_indigo">Jupiter</string>
+    <string name="color_yellow">Mercury</string>
+    <string name="color_mauve">France</string>
+    <string name="color_black">England</string>
+    <string name="color_gold">Spain</string>
+    <string name="color_orange">Germany</string>
+    <string name="color_pink">Pecan</string>
+    <string name="color_red">Walnut</string>
+    <string name="color_turquoise">Almond</string>
+    <string name="color_green">Pistachio</string>
+
+    <string name="id_survey_title">Survey</string>
+    <string name="id_survey_afterevaluation">This evaluation session is now over. You will soon be redirected to the evaluation session of the next menu.</string>
+    <string name="id_survey_afterevaluation2">Before reading these informations, please answer the 9 following questions of the survey, part</string>
+    <string name="id_experiment_ended">The experiment is now over. Please answer the last questions of the survey and bring it back to your instructor.</string>
+    <string name="id_experiment_ended2">We thank you sincerely for your participation. Don\'t hesitate to leave us a comment !</string>
+    <string name="button_continue_experiment">Go on with the experiment</string>
+    <string name="button_back_home">Back home</string>-->
+</resources>

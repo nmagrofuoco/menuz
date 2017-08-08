@@ -1,0 +1,18 @@
+\centering
+    \begin{tikzpicture}[node distance=0.8cm]
+        \tikzstyle{file}
+	  =[draw, rectangle, text width=2cm, minimum height=5cm, text centered]
+	
+	
+	\node[file] (xml) {.xml};
+	\node[file] (java)
+	  [right=4cm of xml]{.java};
+	\node (empty) {};
+	\node[file] {window};
+	
+	\draw[-latex] (xml)--(empty);
+	\draw[-latex] (empty)--(java);
+	\draw[-latex] (empty)--(window);
+    \end{tikzpicture}
+    \caption{An activity is made of a combination between a XML layout and a 
+Java class.}

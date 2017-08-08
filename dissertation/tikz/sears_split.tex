@@ -1,0 +1,30 @@
+\centering
+    \begin{tikzpicture}[node distance=0.8cm]
+        \tikzstyle{item}
+	  =[draw, fill=gray!20, rectangle, text width=2cm, 
+	  minimum height=0.5cm, text centered]
+	
+	\node[item,fill=gray!50] (A)
+	  {Item E};
+	\node[item,fill=gray!50] (B)
+	  [below=3pt of A] {Item G};
+	\node[item,fill=gray!50] (C)
+	  [below=3pt of B] {Item I};
+	\node[item,fill=gray!50] (D)
+	  [below=3pt of C] {Item J};
+	\node[item] (E)
+	  [below=3pt of D] {Item A};
+	\node[item] (F)
+	  [below=3pt of E] {Item B};
+	\node[item] (G)
+	  [below=3pt of F] {Item C};
+	\node[item] (H)
+	  [below=3pt of G] {Item D};
+	\node[item] (J)
+	  [below=3pt of H] {Item F};
+	\node[item] (H1)
+	  [below=3pt of J] {Item H};
+    \end{tikzpicture}
+    \caption{\textsc{Sears}' split menu organization with 10 items. The 4 most 
+frequently selected items are moved to the top section and displayed in 
+alphabetical order.}

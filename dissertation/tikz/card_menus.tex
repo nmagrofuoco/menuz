@@ -1,0 +1,78 @@
+\centering
+    \begin{tikzpicture}[node distance=0.8cm]
+        \tikzstyle{item}
+	  =[draw, fill=gray!20, rectangle, text width=2cm, 
+	  minimum height=0.5cm, text centered]
+	
+	\node[] (1)
+	  {(1)};
+	\node[item] (A)
+	  [below=3pt of 1]{Item A};
+	\node[item] (B)
+	  [below=3pt of A] {Item B};
+	\node[item] (C)
+	  [below=3pt of B] {Item C};
+	\node[item] (D)
+	  [below=3pt of C] {Item D};
+	\node[item] (E)
+	  [below=3pt of D] {Item E};
+	\node[item] (F)
+	  [below=3pt of E] {Item F};
+	\node[item] (G)
+	  [below=3pt of F] {Item G};
+	\node[item] (H)
+	  [below=3pt of G] {Item H};
+	\node[item] (I)
+	  [below=3pt of H] {Item I};
+	\node[item] (J)
+	  [below=3pt of I] {Item J};
+	  
+	\node[] (2)
+	  [right=3cm of 1] {(2)};
+	\node[item] (cat11)
+	  [below=3pt of 2] {Item 1.1};
+	\node[item] (cat12)
+	  [below=3pt of cat11] {Item 1.2};
+	\node[item] (cat21)
+	  [below=3pt of cat12] {Item 2.1};
+	\node[item] (cat31)
+	  [below=3pt of cat21] {Item 3.1};
+	\node[item] (cat32)
+	  [below=3pt of cat31] {Item 3.2};
+	\node[item] (cat33)
+	  [below=3pt of cat32] {Item 3.3};
+	\node[item] (cat41)
+	  [below=3pt of cat33] {Item 4.1};
+	\node[item] (cat42)
+	  [below=3pt of cat41] {Item 4.2};
+	\node[item] (cat51)
+	  [below=3pt of cat42] {Item 5.1};
+	\node[item] (cat61)
+	  [below=3pt of cat51] {Item 6.1};
+	  
+	\node[] (3)
+	  [right=3cm of 2]{(3)};
+	\node[item] (F2)
+	  [below=3pt of 3] {Item F};
+	\node[item] (D2)
+	  [below=3pt of F2] {Item D};
+	\node[item] (A2)
+	  [below=3pt of D2] {Item A};
+	\node[item] (C2)
+	  [below=3pt of A2] {Item C};
+	\node[item] (H2)
+	  [below=3pt of C2] {Item H};
+	\node[item] (G2)
+	  [below=3pt of H2] {Item G};
+	\node[item] (I2)
+	  [below=3pt of G2] {Item I};
+	\node[item] (B2)
+	  [below=3pt of I2] {Item B};
+	\node[item] (E2)
+	  [below=3pt of B2] {Item E};
+	\node[item] (J2)
+	  [below=3pt of E2] {Item J};
+    \end{tikzpicture}
+    \caption{\textsc{Card}'s menu organizations with 10 items : (1) 
+alphabetically, (2) 
+categorically and (3) randomly ordered menus.}

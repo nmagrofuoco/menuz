@@ -1,0 +1,212 @@
+% ------------------------------
+% PACKAGES DE BASE
+% ------------------------------
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+
+%\usepackage[pdftex]{graphicx}
+\usepackage[explicit]{titlesec}
+\usepackage{lmodern}
+\usepackage{graphics}
+\usepackage[top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm]{geometry}
+%\usepackage[top=2.5cm, bottom=2.5cm, outer=1cm, inner=2.1cm]{geometry}
+%\usepackage{float} %Pour les figures avec [H]
+\usepackage[colorinlistoftodos]{todonotes}
+%------------------------------
+% MATHS
+% ------------------------------
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{amsthm}
+\RequirePackage{mathrsfs}
+\usepackage{numprint}
+\usepackage{gensymb}
+\usepackage[french]{nomencl}
+\usepackage{url}
+\usepackage{eurosym}
+
+\usepackage{tabularx}
+
+% ------------------------------
+% COLOR
+% ------------------------------
+\RequirePackage{color}
+\definecolor{UCLblue}{cmyk}{1.00,0.68,0.00,0.54}
+\definecolor{LSMGold}{RGB}{155,128,13}
+\definecolor{EPLblue}{cmyk}{0.70,0.30,0.00,0.00}
+\definecolor{mygreen}{RGB}{36,139,34} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{161,32,247}
+\definecolor{light-gray}{gray}{0.9}
+
+% ------------------------------
+% PERSONNALISATION
+% ------------------------------
+\RequirePackage[colorlinks=false]{hyperref}
+\RequirePackage{listings}
+\RequirePackage{graphicx}
+\RequirePackage{fancyhdr}
+\RequirePackage{fancybox}
+\usepackage{enumitem}
+%\RequirePackage{subfigure}
+\RequirePackage{caption}
+\RequirePackage{subcaption}
+\RequirePackage{epstopdf}
+\RequirePackage{xcolor,colortbl}
+\usepackage{array,multirow,makecell}
+\RequirePackage{pstricks} % Pour faire des figures POST-SCRIPT
+\RequirePackage{titlesec}
+\RequirePackage{tikz}
+\usepackage{courier} % font de \texttt{•} plus jolie \fontfamily{phv}
+\usepackage{lipsum}
+\setcounter{secnumdepth}{3}
+\usepackage{footnote}
+\makesavenoteenv{tabular}
+\makesavenoteenv{table}
+
+% ------------------------------
+% LANGUAGES
+% ------------------------------
+
+\lstdefinestyle{matlab} {language=matlab,style=numbers,style=MyFrame,style=Classic}
+\lstset{
+  language=matlab, 
+  morekeywords={matlab2tikz},
+  commentstyle=\color{mygreen}, % comment style
+  keywordstyle=\color{blue},    % keyword style
+  rulecolor=\color{black},    % if not set, the frame-color may be changed on line-breaks
+  rulesepcolor=\color{black},
+  stringstyle=\color{mylilas} % string style
+}
+
+% ------------------------------
+% INFO SUR LE DOCUMENT
+% ------------------------------
+\renewcommand\title{Conception, design and testing of a split menu for 
+smartphone}	% Titre du TFE
+%\newcommand\subtitle{Sous-titre éventuel}
+
+\newcommand\nameone{Nathan \textsc{Magrofuoco}}	% Nom de l'étudiant
+\newcommand\speciality{Management [60 ects]}		% Spécialité 
+%\newcommand\options{Option(s) si requise(s)}	% À mentioner si demandé par la commission de programme
+\newcommand\supervisor{Jean \textsc{Vanderdonckt}}	% Nom du promoteur
+%\newcommand\cosupervisor{Prénom \textsc{Nom}}	% Nom du co-promoteur éventuel
+%\newcommand\readerone{??? \textsc{???}}		% Nom du 1er lecteur
+%\newcommand\readertwo{??? \textsc{???}}		% Nom du 2nd lecteur
+%\newcommand\readerthree{??? \textsc{???}}	% Nom du 3e lecteur éventuel
+\newcommand\years{2016-2017}	% Année académique
+
+% ------------------------------
+% COMANDE PERSO
+% ------------------------------
+% Création de la page de titre
+\makeatletter
+\renewcommand{\maketitle}
+	{\begin{titlepage}
+	\newgeometry{top=1.25cm,bottom=1.25cm,left=1.25cm,right=1.25cm}
+	\begin{center}
+		\includegraphics[width=\textwidth,trim={0 1cm 0 
+0},clip]{banner_lsm.png}
+	\end{center}
+	\vspace*{9pt}
+	\begin{flushright}
+	    \color{UCLblue} \fontfamily{phv} \selectfont
+	    {\huge \title} \\
+	    \vspace*{12pt}
+	    %{\Large \subtitle} \\
+	    \vspace*{12pt}
+		\large Mémoire présenté par \\
+		\textbf{\nameone}
+		\\
+		\vspace*{12pt} 
+		en vue de l'obtention du grade de master en \\
+		\textbf{\speciality} \\
+%		\textit{Option(s): \options}	% Uncomment if necessary
+		\vspace*{12pt}
+		Promoteur\\
+		\textbf{\supervisor} 
+%		\textbf{, \cosupervisor}		% Uncomment if necessary
+		\\
+%		\vspace*{12pt}
+%		Lecteurs \\
+%		\textbf{\readerone, \readertwo}
+%		\textbf{, \readerthree}	% Uncomment if necessary
+%		\\
+		\vspace*{12pt}
+		Année académique \years \\
+	\end{flushright}
+	\vspace*{9pt}
+	\color{LSMGold}{\rule{18.5cm}{8.5cm}}
+  \end{titlepage}}
+\makeatother
+
+% Création de la préface
+\def\beforepreface{
+	%\color{UCLblue}
+	\pagenumbering{roman}
+	\pagestyle{plain}}
+\def\prefacesection#1{%
+	%\chapter*{#1}
+	%\addcontentsline{toc}{chapter}{#1}
+	}
+\def\afterpreface{
+	\color{black}
+	\tableofcontents
+	\newpage
+	\printnomenclature
+	\addcontentsline{toc}{chapter}{Liste des symboles}
+	\newpage
+	\listoffigures
+	\addcontentsline{toc}{chapter}{Table des figures}
+	%\newpage
+	%\listoftables
+	%\addcontentsline{toc}{chapter}{Liste des tableaux}
+	\newpage
+	\cleardoublepage
+	\pagenumbering{arabic}
+	\pagestyle{headings}}
+
+% Création Back cover page
+\def\makebackcoverpage{
+	\newpage 
+	\thispagestyle{empty}                    
+	\newgeometry{top=1.25cm,bottom=1.25cm,left=1.25cm,right=1.25cm}
+	\vspace*{17.6cm}
+	\noindent {\footnotesize \color{UCLblue}  \selectfont Place des Doyens, 1-1348 Louvain-la-Neuve ~ ~ \color{LSMGold} \textbf{www.uclouvain.be/lsm} \\
+	\vspace*{6pt}
+	\color{LSMGold}{\rule{18.5cm}{8.25cm}}}}
+
+% Back cover page sur page paire
+\newcommand*\cleartoleftpage{%
+  \clearpage
+  \ifodd\value{page}\hbox{}\vspace*{\fill}\thispagestyle{empty}\newpage\fi
+}
+
+	
+% Création des chapitres
+\newlength\chapnumbA
+\setlength\chapnumbA{2cm} 
+\newlength\chapnumbB
+\setlength\chapnumbB{0cm}
+\titleformat{\chapter}[block]
+{\normalfont}{}{0pt}
+{\parbox[b]{\chapnumbA}{%
+   \fontsize{50}{10}\selectfont\thechapter}  %taille_chiffre
+  \parbox[b]{\dimexpr\textwidth-\chapnumbA\relax}{%
+    \raggedleft%
+    \hfill{\Huge#1}\\
+    \rule{\dimexpr\textwidth-\chapnumbA\relax}{0.4pt}}}
+\titleformat{name=\chapter,numberless}[block]
+{\normalfont}{}{0pt}
+{\parbox[b]{\chapnumbB}{%
+   \mbox{}}%
+  \parbox[b]{\dimexpr\textwidth-\chapnumbB\relax}{%
+    \raggedleft%
+    \hfill{\Huge#1}\\
+    \rule{\dimexpr\textwidth-\chapnumbB\relax}{0.4pt}}}
+    
+    
+% Nomenclature : unité à droite
+\newcommand{\nomunit}[1]{%
+ \renewcommand{\nomentryend}{\hspace*{\fill}#1}}    
+	
+\linespread{1.25}

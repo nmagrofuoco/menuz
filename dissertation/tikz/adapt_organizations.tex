@@ -1,0 +1,117 @@
+\centering
+    \begin{tikzpicture}[node distance=0.8cm]
+        \tikzstyle{item}
+	  =[draw, fill=gray!20, rectangle, text width=2cm, 
+	  minimum height=0.5cm, text centered]
+	\tikzstyle{button}
+	=[draw, square, text width=0.5cm, minimum height=0.6cm, text centered]
+	\tikzstyle{radio_button}
+	=[draw, square, text width=0.2cm, minimum height=0.4cm, text centered]
+	
+	\node[item] (A2)
+	  {Item H};
+	\node[item] (B2)
+	  [below=3pt of A2] {Item A};
+	\node[item] (C2)
+	  [below=3pt of B2] {Item B};
+	\node[item] (D2)
+	  [below=3pt of C2] {Item C};
+	\node[item] (E2)
+	  [below=3pt of D2] {Item D};
+	\node[item] (F2)
+	  [below=3pt of E2] {Item E};
+	\node[item] (G2)
+	  [below=3pt of F2] {Item F};
+	\node[item] (H2)
+	  [below=3pt of G2] {Item G};
+	\node[item] (J2)
+	  [below=3pt of H2] {Item I};
+	\node[item] (H2)
+	  [below=3pt of J2] {Item J};
+	\node (1)
+	  [above=2.3cm of A2] {(1)};
+	\node (user)
+	  [above=1.8cm of A2] {User-controlled};
+	\node (empty)
+	  [above=18pt of A2] {};
+	\node[button] (up)
+	  [above left=3pt and -0.8cm of A2]{$\wedge$};
+	\node[button] (down)
+	  [above right=3pt and -0.8cm of A2]{$\vee$};
+	
+	\draw[-latex] (user)--(empty);
+	
+	\node[item,fill=gray!50] (A)
+	  [right=2cm of A2]{Item E};
+	\node[item,fill=gray!50] (B)
+	  [below=3pt of A] {Item G};
+	\node[item,fill=gray!50] (C)
+	  [below=3pt of B] {Item I};
+	\node[item,fill=gray!50] (D)
+	  [below=3pt of C] {Item J};
+	\node[item] (E)
+	  [below=3pt of D] {Item A};
+	\node[item] (F)
+	  [below=3pt of E] {Item B};
+	\node[item] (G)
+	  [below=3pt of F] {Item C};
+	\node[item] (H)
+	  [below=3pt of G] {Item D};
+	\node[item] (J)
+	  [below=3pt of H] {Item F};
+	\node[item] (H1)
+	  [below=3pt of J] {Item H};
+	\node (2)
+	  [above=2.3cm of A] {(2)};
+	\node (syst)
+	  [above=1.8cm of A] {System-controlled};
+	\node (empty)
+	  [above=1pt of A] {};
+	  
+	\draw[-latex] (syst)--(empty);
+	
+	\node[item,fill=gray!50] (A3)
+	  [right=2cm of A] {Item E};
+	\node[item,fill=gray!50] (B3)
+	  [below=3pt of A3] {Item G};
+	\node[item,fill=gray!50] (C3)
+	  [below=3pt of B3] {Item I};
+	\node[item,fill=gray!50] (D3)
+	  [below=3pt of C3] {Item J};
+	\node[item] (E3)
+	  [below=3pt of D3] {Item A};
+	\node[item] (F3)
+	  [below=3pt of E3] {Item B};
+	\node[item] (G3)
+	  [below=3pt of F3] {Item C};
+	\node[item] (H3)
+	  [below=3pt of G3] {Item D};
+	\node[item] (J3)
+	  [below=3pt of H3] {Item F};
+	\node[item] (H3)
+	  [below=3pt of J3] {Item H};
+	\node (3)
+	  [above=2.3cm of A3] {(3)};
+	\node (user3)
+	  [above=1.8cm of A3] {User-controlled};
+	\node (empty3)
+	  [above=25pt of A3] {};
+	\node (empty4)
+	  [right=1pt of A3] {};
+	\node (syst3)
+	  [below right=2pt and -4pt of user3] {System-controlled};
+	\node[radio_button] (rec)
+	  [above left=3pt and -0.5cm of A3] {};
+	\node[radio_button] (freq)
+	  [above=3pt of rec] {x};
+	\node (freq_text)
+	  [right=3pt of freq]{Frequency};
+	\node (rec_text)
+	  [right=3pt of rec]{Recency};
+	  
+	\draw[-latex] (user3)--(empty3);
+	\draw[-latex] (syst3)|-(empty4);
+	  
+    \end{tikzpicture}
+    \caption{(1) Adaptable, (2) adaptive and (3) mixed-initiative menu 
+organizations with a focus on system-controlled and user-controlled features.}

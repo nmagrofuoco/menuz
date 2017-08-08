@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="be.ac.uclouvain.menuz"
+    android:installLocation="preferExternal">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".IntroductionActivity" />
+        <activity android:name=".NextSelectionActivity" />
+        <activity android:name=".MenuIntroductionActivity" />
+
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".PaginatedMenuActivity" />
+        <activity android:name=".SplitMenuActivity" />
+        <activity android:name=".PaginatedSplitMenuActivity" />
+        <activity android:name=".MultiColMenuActivity" />
+        <activity android:name=".MultiColPaginatedMenuActivity" />
+        <activity android:name=".MultiColSplitMenuActivity" />
+        <activity android:name=".MultiColPaginatedSplitMenuActivity" />
+        <activity android:name=".SurveyRequestActivity"></activity>
+    </application>
+
+</manifest>

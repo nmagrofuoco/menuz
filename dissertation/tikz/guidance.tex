@@ -1,0 +1,80 @@
+
+  \begin{subfigure}[t]{.49\textwidth}
+  \centering
+  \resizebox{\linewidth}{!}{
+  \begin{tikzpicture}[baseline]
+    \begin{axis}[
+      %title={Evolution of student participation for each exercise},
+      enlarge y limits=false,
+      axis lines*=left,
+      xlabel={Menu organization},
+      ylabel={Average rating},
+      xmin=1, xmax=8,
+      ymin=1, ymax=7,
+      xtick=data,
+      ytick={1,2,3,4,5,6,7},
+      legend pos=east,
+      legend columns=0,
+      %xmajorgrids=true,
+      ymajorgrids=true,
+      grid style=dashed,
+      enlargelimits=0.15,
+      %histogram related :
+      ybar,
+      symbolic x coords={1,2,3,4,5,6,7,8},
+      nodes near coords,
+      ]
+      
+    \addplot[orange!70!black, fill=orange!40] coordinates
+    {(1,6.7) (2,6.7) (3,6.7) (4,6.5) (5,6.6) (6,6.6) (7,6.7) 
+     (8,6.6)};
+    
+    %\legend{Men, Women}
+    
+    \end{axis}
+  \end{tikzpicture}}
+  \caption{Average rating gathered for the sentence \enquote{I found this menu 
+presented as expected} for each menu organization.}
+  \label{fig:background}
+  \end{subfigure}
+  \begin{subfigure}[t]{.49\textwidth}
+    \resizebox{\linewidth}{!}{
+    \centering
+    \begin{tikzpicture}[baseline]
+    \begin{axis}[
+      %title={Evolution of student participation for each exercise},
+      enlarge y limits=false,
+      axis lines*=left,
+      xlabel={Menu organization},
+      ylabel={Average rating},
+      xmin=1, xmax=8,
+      ymin=1, ymax=7,
+      xtick=data,
+      ytick={1,2,3,4,5,6,7},
+      legend pos=east,
+      legend columns=0,
+      %xmajorgrids=true,
+      ymajorgrids=true,
+      grid style=dashed,
+      enlargelimits=0.15,
+      %histogram related :
+      ybar,
+      symbolic x coords={1,2,3,4,5,6,7,8},
+      nodes near coords,
+      every node near coord/.append style={
+	  /pgf/number format/fixed zerofill,
+	  /pgf/number format/precision=1
+      }
+      ]
+      
+    \addplot[orange!70!black, fill=orange!40] coordinates
+    {(1,1.1) (2,1.6) (3,1.4) (4,1.4) (5,1.3) (6,1.3) (7,1.2) (8,1.3)};
+    
+    %\legend{Men, Women}
+    
+    \end{axis}
+  \end{tikzpicture}}
+  \caption{Average rating gathered for the sentence \enquote{I needed more 
+guidance informations about this menu} for each menu organization.}
+  \end{subfigure}
+  \caption{}

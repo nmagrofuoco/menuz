@@ -1,0 +1,37 @@
+\centering
+\begin{tikzpicture}
+    \begin{axis}[
+      %title={Evolution of student participation for each exercise},
+      enlarge y limits=false,
+      enlarge x limits=-1,
+      height=6cm,
+      width=14.5cm,
+      axis lines*=left,
+      xlabel={Participant id},
+      ylabel={\# errors},
+      xmin=1, xmax=18,
+      ymin=0, ymax=6,
+      xtick=data,
+      ytick={0,1,2,3,4,5,6},
+      legend pos=east,
+      legend columns=0,
+      %xmajorgrids=true,
+      ymajorgrids=true,
+      grid style=dashed,
+      enlargelimits=0.15,
+      %histogram related :
+      ybar,
+      symbolic x coords={1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18},
+      nodes near coords,
+      ]
+      
+    \addplot[orange!70!black, fill=orange!40] coordinates
+    {(1,1) (2,0) (3,2) (4,0) (5,0) (6,2) (7,1) (8,5) (9,1) (10,4) (11,1) (12,0)
+     (13,0) (14,2) (15,0) (16,2) (17,1) (18,0)};
+    
+    %\legend{Men, Women}
+    
+    \end{axis}
+  \end{tikzpicture}
+  \caption{Number of errors performed by each participant after 80 
+selections.}

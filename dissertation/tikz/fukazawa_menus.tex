@@ -1,0 +1,91 @@
+\centering
+    \begin{tikzpicture}[node distance=0.8cm]
+	\tikzstyle{item}
+	  =[draw, fill=gray!20, rectangle, text width=2cm, 
+	  minimum height=0.5cm, text centered]
+	  
+        \tikzstyle{item_col}
+	  =[draw, fill=gray!20, rectangle, text width=1.3cm, 
+	  minimum height=0.5cm, text centered]
+	\tikzstyle{item_col_xl}
+	  =[draw, fill=gray!20, rectangle, text width=1.3cm, 
+	  minimum height=1cm, text centered]
+	  
+	\tikzstyle{item_circle}
+	  =[draw, fill=gray!20, circle, text width=0.3cm, text centered]
+	\tikzstyle{item_circle_xl}
+	  =[draw, fill=gray!20, circle, text width=0.8cm, text centered]
+	  
+	\node[item_col] (A)
+	  {Item A};
+	\node[item_col] (B)
+	  [below=3pt of A] {Item C};
+	\node[item_col] (C)
+	  [below=3pt of B] {Item E};
+	\node[item_col] (D)
+	  [below=3pt of C] {Item G};
+	\node[item_col] (E)
+	  [below=3pt of D] {Item I};
+	\node[item_col] (F)
+	  [right=3pt of A] {Item B};
+	\node[item_col] (G)
+	  [below=3pt of F] {Item D};
+	\node[item_col] (H)
+	  [below=3pt of G] {Item F};
+	\node[item_col] (I)
+	  [below=3pt of H] {Item H};
+	\node[item_col] (J)
+	  [below=3pt of I] {Item J};
+	\node[] (1)
+	  [above right=0.7cm and -9pt of A]{(1)};
+	  
+	\node[item_col] (A2)
+	  [right=1cm of F]{Item A};
+	\node[item_col_xl] (B2)
+	  [right=0pt of A2] {Item B};
+	\node[item_col] (C2)
+	  [right=0pt of B2] {Item C};
+	\node[item_col_xl] (D2)
+	  [below=0pt of A2] {Item D};
+	\node[item_col] (E2)
+	  [right=0pt of D2] {Item E};
+	\node[item_col] (F2)
+	  [right=0pt of E2] {Item F};
+	\node[item_col] (G2)
+	  [below=0pt of D2] {Item G};
+	\node[item_col_xl] (H2)
+	  [right=0pt of G2] {Item H};
+	\node[item_col_xl] (I2)
+	  [right=0pt of H2] {Item I};
+	\node[item_col] (J2)
+	  [below=0pt of G2] {Item J};
+	\node[] (2)
+	  [above right=0.7cm and -9pt of A2]{(2)};
+	  
+	\node[item_circle] (A3)
+	  [right=1cm of C2]{A};
+	\node[item_circle_xl] (B3)
+	  [right=0pt of A3] { B};
+	\node[item_circle] (C3)
+	  [right=0pt of B3] { C};
+	\node[item_circle_xl] (D3)
+	  [below=0pt of A3] { D};
+	\node[item_circle] (E3)
+	  [right=0pt of D3] { E};
+	\node[item_circle] (F3)
+	  [right=0pt of E3] { F};
+	\node[item_circle] (G3)
+	  [below=0pt of D3] { G};
+	\node[item_circle_xl] (H3)
+	  [right=0pt of G3] { H};
+	\node[item_circle_xl] (I3)
+	  [right=0pt of H3] { I};
+	\node[item_circle] (J3)
+	  [below=0pt of G3] { J};
+	\node[] (3)
+	  [above right=0.7cm and -9pt of A3]{(3)};
+	  
+	
+    \end{tikzpicture}
+    \caption{\textsc{Fukazawa}'s menu organizations with 10 items : (1) 
+2-column, (2) rectangle-shaped items and (3) circle-shaped items.}

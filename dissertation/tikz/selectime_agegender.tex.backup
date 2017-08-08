@@ -1,0 +1,42 @@
+\centering
+\begin{tikzpicture}
+    \begin{axis}[
+      %title={Evolution of student participation for each exercise},
+      enlarge y limits=false,
+      enlarge x limits=true,
+      width=14.5cm,
+      height=6cm,
+      axis lines*=left,
+      xlabel={Age range},
+      ylabel={Ratio (success rate/selection time)},
+      %xmin=1, xmax=4,
+      ymin=35, ymax=55,
+      xtick=data,
+      ytick={35,40,45,50,55},
+      legend pos=east,
+      legend columns=0,
+      %xmajorgrids=true,
+      ymajorgrids=true,
+      grid style=dashed,
+      enlargelimits=0.15,
+      %histogram related :
+      ybar,
+      symbolic x coords={<25, 25-40, >40},
+      nodes near coords,
+      every node near coord/.append style={
+	  /pgf/number format/fixed zerofill,
+	  /pgf/number format/precision=1
+      }
+      ]
+      
+    \addplot coordinates
+    {(<25, 49.155) (25-40, 46.329) (>40, 33.903)};   
+    \addplot coordinates
+    {(<25, 53.150) (25-40, 45.827) (>40, 31.399)};
+    
+    \legend{Men, Women}
+    
+    \end{axis}
+  \end{tikzpicture}
+  \caption{Number of errors performed by each participant after 80 
+selections.}

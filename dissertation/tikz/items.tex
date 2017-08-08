@@ -1,0 +1,53 @@
+\centering
+    \begin{tikzpicture}[node distance=0.8cm]
+        \tikzstyle{item}
+	  =[draw, fill=gray!20, rectangle, text width=2cm, 
+	  minimum height=0.5cm, text centered]
+	
+	\node[] (wines)
+	  {Wines:};
+	\node[item] (A)
+	  [below=3pt of wines]{Merlot};
+	\node[item] (B)
+	  [below=3pt of A] {Shiraz};
+	\node[item] (C)
+	  [below=3pt of B] {Chardonnay};
+	\node[item] (D)
+	  [below=3pt of C] {Cabernet};
+	  
+	\node[] (planets)
+	  [right=1.5cm of wines] {Planets:};
+	\node[item] (cat11)
+	  [below=3pt of planets] {Saturn};
+	\node[item] (cat12)
+	  [below=3pt of cat11] {Venus};
+	\node[item] (cat21)
+	  [below=3pt of cat12] {Jupiter};
+	\node[item] (cat31)
+	  [below=3pt of cat21] {Mercury};
+	 
+	\node[] (countries)
+	  [right=1.5cm of planets]{Countries:};
+	\node[item] (F2)
+	  [below=3pt of countries] {France};
+	\node[item] (D2)
+	  [below=3pt of F2] {England};
+	\node[item] (A2)
+	  [below=3pt of D2] {Spain};
+	\node[item] (C2)
+	  [below=3pt of A2] {Germany};
+	  
+	\node[] (dried)
+	  [right=1.5cm of countries]{Dried Fruits:};
+	\node[item] (F3)
+	  [below=3pt of dried] {Pecan};
+	\node[item] (D3)
+	  [below=3pt of F3] {Walnut};
+	\node[item] (A3)
+	  [below=3pt of D3] {Almond};
+	\node[item] (C3)
+	  [below=3pt of A3] {Pistachio};
+    \end{tikzpicture}
+    \caption{The 4 categories of 4 items described by \textsc{Findlater} and 
+used 
+during the experiment.}

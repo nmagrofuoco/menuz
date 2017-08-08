@@ -1,0 +1,35 @@
+\centering
+\begin{tikzpicture}
+    \begin{axis}[
+      %title={Evolution of student participation for each exercise},
+      enlarge y limits=false,
+      enlarge x limits=-1,
+      height=6cm,
+      width=14.5cm,
+      axis lines*=left,
+      xlabel={Menu organization},
+      ylabel={Average satisfaction ratio},
+      %xmin=1, xmax=4,
+      ymin=1, ymax=7,
+      xtick=data,
+      ytick={1,2,3,4,5,6,7},
+      legend pos=east,
+      legend columns=0,
+      %xmajorgrids=true,
+      ymajorgrids=true,
+      grid style=dashed,
+      enlargelimits=0.15,
+      %histogram related :
+      ybar,
+      symbolic x coords={1,2,3,4,5,6,7,8},
+      nodes near coords,
+      ]
+      
+    \addplot[orange!70!black, fill=orange!40] coordinates
+    {(1,6.04) (2,5.45) (3,5.57) (4,5.42) (5,5.82) (6,5.13) (7,5.65) (8,5.16)};
+    
+    %\legend{Men, Women}
+    
+    \end{axis}
+  \end{tikzpicture}
+  \caption{Average satisfaction ratio for each menu organization.}

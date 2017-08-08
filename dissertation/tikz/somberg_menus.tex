@@ -1,0 +1,165 @@
+\centering
+    \begin{tikzpicture}[node distance=0.8cm]
+        \tikzstyle{item}
+	  =[draw, fill=gray!20, rectangle, text width=2cm, 
+	  minimum height=0.5cm, text centered]
+	
+	\node[] (1a)
+	  {(1a)};
+	\node[item] (A)
+	  [below=3pt of 1a]{Item A};
+	\node[item] (B)
+	  [below=3pt of A] {Item B};
+	\node[item] (C)
+	  [below=3pt of B] {Item C};
+	\node[item] (D)
+	  [below=3pt of C] {Item D};
+	\node[item] (E)
+	  [below=3pt of D] {Item E};
+	\node[item] (F)
+	  [below=3pt of E] {Item F};
+	\node[item] (G)
+	  [below=3pt of F] {Item G};
+	\node[item] (H)
+	  [below=3pt of G] {Item H};
+	\node[item] (I)
+	  [below=3pt of H] {Item I};
+	\node[item] (J)
+	  [below=3pt of I] {Item J};
+	 
+	\node[] (1b)
+	  [right=2cm of 1a] {(1b)};
+	\node[item] (D3)
+	  [below=3pt of 1b] {Item D};
+	\node[item] (E3)
+	  [below=3pt of D3] {Item E};
+	\node[item] (F3)
+	  [below=3pt of E3] {Item F};
+	\node[item] (G3)
+	  [below=3pt of F3] {Item G};
+	\node[item] (H3)
+	  [below=3pt of G3] {Item H};
+	\node[item] (I3)
+	  [below=3pt of H3] {Item I};
+	\node[item] (J3)
+	  [below=3pt of I3] {Item J};
+	\node[item] (A3)
+	  [below=3pt of J3]{Item A};
+	\node[item] (B3)
+	  [below=3pt of A3] {Item B};
+	\node[item] (C3)
+	  [below=3pt of B3] {Item C};
+
+	\node[] (2a)
+	  [right=3cm of 1b]{(2a)};
+	\node[item] (F2)
+	  [below=3pt of 2a] {Item F};
+	\node[item] (D2)
+	  [below=3pt of F2] {Item D};
+	\node[item] (A2)
+	  [below=3pt of D2] {Item A};
+	\node[item] (C2)
+	  [below=3pt of A2] {Item C};
+	\node[item] (H2)
+	  [below=3pt of C2] {Item H};
+	\node[item] (G2)
+	  [below=3pt of H2] {Item G};
+	\node[item] (I2)
+	  [below=3pt of G2] {Item I};
+	\node[item] (B2)
+	  [below=3pt of I2] {Item B};
+	\node[item] (E2)
+	  [below=3pt of B2] {Item E};
+	\node[item] (J2)
+	  [below=3pt of E2] {Item J};
+	  
+	\node[] (2b)
+	  [right=2cm of 2a]{(2b)};
+	\node[item] (F4)
+	  [below=3pt of 2b] {Item J};
+	\node[item] (D4)
+	  [below=3pt of F4] {Item D};
+	\node[item] (A4)
+	  [below=3pt of D4] {Item B};
+	\node[item] (C4)
+	  [below=3pt of A4] {Item G};
+	\node[item] (H4)
+	  [below=3pt of C4] {Item A};
+	\node[item] (G4)
+	  [below=3pt of H4] {Item I};
+	\node[item] (I4)
+	  [below=3pt of G4] {Item E};
+	\node[item] (B4)
+	  [below=3pt of I4] {Item H};
+	\node[item] (E4)
+	  [below=3pt of B4] {Item C};
+	\node[item] (J4)
+	  [below=3pt of E4] {Item F};
+	 
+	\node[] (3a)
+	  [below right=1cm and 2cm of J] {(3a)};
+	\node[item] (F5)
+	  [below=3pt of 3a] {Item G};
+	\node[item] (D5)
+	  [below=3pt of F5] {Item C};
+	\node[item] (A5)
+	  [below=3pt of D5] {Item E};
+	\node[item] (C5)
+	  [below=3pt of A5] {Item A};
+	\node[item] (H5)
+	  [below=3pt of C5] {Item I};
+	\node[item] (G5)
+	  [below=3pt of H5] {Item J};
+	\node[item] (I5)
+	  [below=3pt of G5] {Item H};
+	\node[item] (B5)
+	  [below=3pt of I5] {Item F};
+	\node[item] (E5)
+	  [below=3pt of B5] {Item B};
+	\node[item] (J5)
+	  [below=3pt of E5] {Item D};
+	  
+	\node[] (MostProb3a)
+	  [left=0.5cm of F5] {Most probable in 3a};
+	\node[] (LessProb3a)
+	  [left=0.5cm of J5] {Less probable in 3a};
+	  
+	\node[] (3b)
+	  [right=2cm of 3a]{(3b)};
+	\node[item] (F6)
+	  [below=3pt of 3b] {Item C};
+	\node[item] (D6)
+	  [below=3pt of F6] {Item E};
+	\node[item] (A6)
+	  [below=3pt of D6] {Item G};
+	\node[item] (C6)
+	  [below=3pt of A6] {Item A};
+	\node[item] (H6)
+	  [below=3pt of C6] {Item J};
+	\node[item] (G6)
+	  [below=3pt of H6] {Item I};
+	\node[item] (I6)
+	  [below=3pt of G6] {Item B};
+	\node[item] (B6)
+	  [below=3pt of I6] {Item H};
+	\node[item] (E6)
+	  [below=3pt of B6] {Item F};
+	\node[item] (J6)
+	  [below=3pt of E6] {Item D}; 
+	
+	\node[] (MostProb3b)
+	  [right=0.5cm of F6] {Most probable in 3b};
+	\node[] (LessProb3b)
+	  [right=0.5cm of J6] {Less probable in 3b};
+	
+	\draw[-latex] (1a)--(1b);
+	\draw[-latex] (2a)--(2b);
+	\draw[-latex] (3a)--(3b);
+	\draw[-latex,dashed] (MostProb3a)--(LessProb3a);
+	\draw[-latex,dashed] (MostProb3b)--(LessProb3b);
+    \end{tikzpicture}
+    \caption{Illustrating 2 potential iterations (a) and (b) for each 
+\textsc{Somberg}'s dynamic menu organization with 10 items : (1) 
+alphabetically, (2) 
+randomly and (3) probability ordered menus. (1a) can be considered as the 
+static alphabetically ordered menu described by Somberg.}

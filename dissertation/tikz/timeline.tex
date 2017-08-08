@@ -1,0 +1,100 @@
+    \centering
+    \begin{tikzpicture}[node distance=0.8cm]
+	\tikzstyle{circ_xs}
+	  =[draw, circle, text width=0.5pt, inner sep=0.5pt]
+	\tikzstyle{rect_lg}
+	  =[draw, rectangle, text width=3cm, minimum height=.5cm, inner sep=0pt]
+	\tikzstyle{rect_xlg}
+	  =[draw, rectangle, text width=4.9cm, minimum height=.5cm, inner 
+sep=0pt]
+	
+	\node[draw=none] (start)
+	  {};
+	  
+	\node[circ_xs,draw=black,fill=black] (80)
+	  [right=0.5cm of start] {};
+	\node[] (1980)
+	  [below=0.5cm of 80] {1980};
+	  
+	\node[rect_lg,fill=red!60,draw=none] (period_premises)
+	  [above right=0pt of 80] {};
+	\node[outer sep=0pt, inner sep=0pt] (empty1)
+	  [above=1pt of period_premises] {};
+	\node[] (premises)
+	  [above=0.5cm of empty1] {Premises};
+	  
+	\node[circ_xs,draw=black,fill=black] (90)
+	  [right=3cm of 80] {};
+	\node[] (1990)
+	  [below=0.5cm of 90] {1990};
+	  
+	\node[circ_xs,draw=black,fill=black] (94)
+	  [right=1.2cm of 90] {};
+	\node[] (1994)
+	  [below=0.5cm of 94] {1994};
+	
+	\node[rect_xlg,fill=blue!60,draw=none] (period_split)
+	  [above right=0pt of 94] {};
+	\node[outer sep=0pt, inner sep=0pt] (empty2)
+	  [above=1pt of period_split] {};
+	\node[] (split_expe)
+	  [above=2.2cm of empty2] {The advent of split menu};
+	  
+	\node[circ_xs,draw=black,fill=black] (00)
+	  [right=1.8cm of 94] {};
+	\node[] (2000)
+	  [below=0.5cm of 00] {2000};
+	  
+	\node[rect_lg,fill=green!60,draw=none] (period_adapt)
+	  [below right=0pt of 00] {};
+	\node[outer sep=0pt, inner sep=0pt] (empty3)
+	  [below=1pt of period_adapt] {};
+	\node[] (adapt)
+	  [below=1.5cm of empty3] {Adaptive vs. Adaptable approach};
+	
+	\node[circ_xs,draw=black,fill=black] (09)
+	  [right=2.7cm of 00] {};
+	\node[] (2009)
+	  [above=1.6cm of 09] {2009};
+	\node[] (mobile)
+	  [below=0cm of 2009] {Responsive menus};
+	
+	\node[circ_xs,draw=black,fill=black] (10)
+	  [right=0.22cm of 09] {};
+	\node[] (2010)
+	  [below=0.5cm of 10] {2010};
+	
+	\node[circ_xs,draw=black,fill=black] (17)
+	  [right=2.1cm of 10] {};
+	\node[] (2017)
+	  [below=0.5cm of 17] {2017};
+	  
+	\node[circ_xs,draw=white,fill=white] (20)
+	  [right=0.4cm of 17] {};
+	  
+	\node[circ_xs,draw=white,fill=white] (end)
+	  [right=0.3cm of 20] {};
+	  
+	\draw[-] (start)--(80);
+	\draw[-] (80)--(90);
+	\draw[-] (90)--(94);
+	\draw[-] (94)--(00);
+	\draw[-] (00)--(09);
+	\draw[-] (09)--(10);
+	\draw[-] (10)--(17);
+	\draw[-] (17)--(20);
+	\draw[-latex,line width=0.1cm] (20)--(end);
+	
+	\draw[-] (80)--(1980);
+	\draw[-] (90)--(1990);
+	\draw[-] (94)--(1994);
+	\draw[-] (00)--(2000);
+	\draw[-] (09)--(mobile);
+	\draw[-] (10)--(2010);
+	\draw[-] (17)--(2017);
+	
+	\draw[-] (premises)--(empty1);
+	\draw[-] (split_expe)--(empty2);
+	\draw[-] (adapt)--(empty3);
+    \end{tikzpicture}
+    \caption{Time line of major research topics from 1980 to 2017.}

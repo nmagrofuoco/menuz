@@ -1,0 +1,12 @@
+\appendix
+
+\chapter{Survey} \label{survey}
+\includepdf[pages={1-},scale=0.85]{img/survey.pdf}
+
+\chapter{Application UI} \label{screenshots}
+
+\begin{figure}[!ht]
+    \includegraphics[scale=0.18]{img/main_activity.png}
+    \label{fig:main_activity}
+    \caption{MainActivity.java}
+\end{figure}

@@ -1,0 +1,16 @@
+\documentclass[11pt,a4paper,openright,twoside]{report}
+\usepackage[french]{babel}
+\input{SETUP/package}
+\begin{document}
+\makenomenclature
+
+%--- Cover Page ----------------
+\maketitle					% To create front cover page
+\thispagestyle{empty}		% To suppress header and footer on the back of the cover page
+\newgeometry{top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm} 
+%\newgeometry{top=2.5cm, bottom=2.5cm, outer=3cm, inner=2cm}
+\cleardoublepage
+
+\cleartoleftpage
+\makebackcoverpage			% To create back cover page
+\end{document}

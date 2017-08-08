@@ -1,0 +1,58 @@
+\centering
+    \begin{tikzpicture}[node distance=0.8cm]
+        \tikzstyle{item}
+	  =[draw, fill=gray!20, rectangle, text width=2cm, 
+	  minimum height=0.5cm, text centered]
+	\tikzstyle{item-xs}
+	  =[draw, fill=gray!20, rectangle, text width=2cm, 
+	  minimum height=0.2cm, text centered]
+	
+	\node[] (1)
+	  {(1)};
+	\node[item] (A)
+	  [below=3pt of 1]{Item A};
+	\node[item,fill=gray!50] (B)
+	  [below=3pt of A] {Item B};
+	\node[item] (C)
+	  [below=3pt of B] {Item C};
+	\node[item] (D)
+	  [below=3pt of C] {Item D};
+	\node[item] (E)
+	  [below=3pt of D] {Item E};
+	\node[item,fill=gray!50] (F)
+	  [below=3pt of E] {Item F};
+	\node[item] (G)
+	  [below=3pt of F] {Item G};
+	\node[item,fill=gray!50] (H)
+	  [below=3pt of G] {Item H};
+	\node[item] (I)
+	  [below=3pt of H] {Item I};
+	\node[item] (J)
+	  [below=3pt of I] {Item J};
+	  
+	\node[] (2)
+	  [right=3cm of 1] {(2)};
+	\node[item-xs] (A2)
+	  [below=3pt of 2]{Item A};
+	\node[item,fill=gray!50] (B2)
+	  [below=3pt of A2] {Item B};
+	\node[item-xs] (C2)
+	  [below=3pt of B2] {Item C};
+	\node[item-xs] (D2)
+	  [below=3pt of C2] {Item D};
+	\node[item-xs] (E2)
+	  [below=3pt of D2] {Item E};
+	\node[item,fill=gray!50] (F2)
+	  [below=3pt of E2] {Item F};
+	\node[item-xs] (G2)
+	  [below=3pt of F2] {Item G};
+	\node[item,fill=gray!50] (H2)
+	  [below=3pt of G2] {Item H};
+	\node[item-xs] (I2)
+	  [below=3pt of H2] {Item I};
+	\node[item-xs] (J2)
+	  [below=3pt of I2] {Item J};
+    \end{tikzpicture}
+    \caption{Tsandilas' menu organizations with 10 items and considering that 
+items B, F and H are the suggested items : (1) highlighting suggestions and (2) 
+shrinking non-suggested items.}

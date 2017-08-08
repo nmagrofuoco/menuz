@@ -1,0 +1,61 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: tikz/timeline.aux
+A level-1 auxiliary file: tikz/card_menus.aux
+A level-1 auxiliary file: tikz/somberg_menus.aux
+A level-1 auxiliary file: tikz/sears_split.aux
+A level-1 auxiliary file: tikz/adapt_organizations.aux
+A level-1 auxiliary file: tikz/tsandilas_menus.aux
+A level-1 auxiliary file: tikz/khalid_menus.aux
+A level-1 auxiliary file: tikz/fukazawa_menus.aux
+A level-1 auxiliary file: tikz/items.aux
+A level-1 auxiliary file: tikz/activity.aux
+A level-1 auxiliary file: tikz/architecture.aux
+A level-1 auxiliary file: tikz/participants.aux
+A level-1 auxiliary file: tikz/participants_skills.aux
+A level-1 auxiliary file: tikz/errors.aux
+A level-1 auxiliary file: tikz/errors_participants.aux
+The style file: unsrt.bst
+Database file #1: bibliography.bib
+You've used 20 entries,
+            1791 wiz_defined-function locations,
+            583 strings with 7233 characters,
+and the built_in function-call counts, 4885 in all, are:
+= -- 499
+> -- 134
+< -- 7
++ -- 55
+- -- 35
+* -- 262
+:= -- 714
+add.period$ -- 68
+call.type$ -- 20
+change.case$ -- 19
+chr.to.int$ -- 0
+cite$ -- 20
+duplicate$ -- 255
+empty$ -- 492
+format.name$ -- 35
+if$ -- 1160
+int.to.chr$ -- 0
+int.to.str$ -- 20
+missing$ -- 19
+newline$ -- 105
+num.names$ -- 20
+pop$ -- 66
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 152
+stack$ -- 0
+substring$ -- 326
+swap$ -- 89
+text.length$ -- 7
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 48
+width$ -- 22
+write$ -- 235

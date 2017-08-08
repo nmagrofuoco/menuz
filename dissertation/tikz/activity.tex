@@ -1,0 +1,65 @@
+\centering
+    \begin{tikzpicture}[node distance=0.8cm]
+        \tikzstyle{file}
+	  =[draw, rectangle, text width=2cm, minimum height=3cm, 
+	  text centered]
+	\tikzstyle{rect_xs}
+	  =[draw, rectangle, text width=1.1cm, minimum height=.13cm, 
+	  text centered]
+	\tikzstyle{rect_xxs}
+	  =[draw, rectangle, text width=0.7cm, minimum height=.1cm, 
+	  text centered]
+	  
+	\node[file] (filexml) {};
+	\node[] (xml) 
+	  [above=3pt of filexml] {activity\_main.xml};
+	\node[] (code1) 
+	  [below left=9pt and -2.4cm of xml] {\_\_\_\_\_};
+	\node[] (code2) 
+	  [below left=3pt and -1.45cm of code1] {\_\_\_\_};
+	\node[] (code3) 
+	  [below left=3pt and -1.7cm of code2] {\_\_\_\_\_};
+	\node[] (code4) 
+	  [below left=3pt and -1.15cm of code3] {\_\_\_};
+	\node[] (code5) 
+	  [below left=3pt and -1.4cm of code4] {\_\_\_\_};
+	  
+	\node[file] (filejava)
+	  [right=3cm of filexml] {};
+	\node[] (java) 
+	  [above=3pt of filejava] {MainActivity.java};
+	\node[] (code6) 
+	  [below left=9pt and -2.4cm of java] {\_\_\_\_\_};
+	\node[] (code7) 
+	  [below left=3pt and -1.45cm of code6] {\_\_\_\_};
+	\node[] (code8) 
+	  [below left=3pt and -1.7cm of code7] {\_\_\_\_\_};
+	\node[] (code9) 
+	  [below left=3pt and -1.15cm of code8] {\_\_\_};
+	\node[] (code10) 
+	  [below left=3pt and -1.4cm of code9] {\_\_\_\_};
+	
+	\node[inner sep=0, outer sep=0, draw=black, fill=black, 
+	line width=0.06cm] (empty) 
+	  [right=1.5cm of filexml] {};
+	\node[] (empty1)
+	  [below=1pt of empty] {};
+	  
+	\node[file] (windowfile)
+	  [below=2.5cm of empty] {};
+	\node[] (window) 
+	  [above=3pt of windowfile] {window};
+	\node[] (title)
+	  [below=2.9cm of empty] {\_\_\_\_};
+	\node[rect_xs] (textinput)
+	  [below=3.8cm of empty] {};
+	\node[rect_xxs] (button)
+	  [below=4pt of textinput] {\_\_};
+	
+	\draw[-latex, line width=0.1cm] (empty)--(filexml);
+	\draw[-latex, line width=0.1cm] (empty)--(filejava);
+	\draw[-latex, dashed, line width=0.05cm] (empty1)--(window);
+    \end{tikzpicture}
+    \caption{An activity takes care of creating a window by combining a XML 
+layout which defines its UI and a Java class which handles the activity 
+lifecycle and user's actions.}

@@ -1,0 +1,80 @@
+
+  \begin{subfigure}[t]{.49\textwidth}
+  \centering
+  \resizebox{\linewidth}{!}{
+  \begin{tikzpicture}[baseline]
+    \begin{axis}[
+      %title={Evolution of student participation for each exercise},
+      enlarge y limits=false,
+      axis lines*=left,
+      xlabel={Menu organization},
+      ylabel={Average selection time (s)},
+      xmin=1, xmax=8,
+      ymin=2, ymax=3,
+      xtick=data,
+      ytick={2,2.2,2.4,2.6,2.8,3},
+      legend pos=east,
+      legend columns=0,
+      %xmajorgrids=true,
+      ymajorgrids=true,
+      grid style=dashed,
+      enlargelimits=0.15,
+      %histogram related :
+      ybar,
+      symbolic x coords={1,2,3,4,5,6,7,8},
+      nodes near coords,
+      ]
+      
+    \addplot[orange!70!black, fill=orange!40] coordinates
+    {(1,2.497) (2,2.517) (3,2.464) (4,2.260) (5,2.067) (6,2.314) (7,2.351) 
+     (8,2.322)};
+    
+    %\legend{Men, Women}
+    
+    \end{axis}
+  \end{tikzpicture}}
+  \caption{Average selection time for each menu organization.}
+  \label{fig:background}
+  \end{subfigure}
+  \begin{subfigure}[t]{.49\textwidth}
+    \resizebox{\linewidth}{!}{
+    \centering
+    \begin{tikzpicture}[baseline]
+    \begin{axis}[
+      %title={Evolution of student participation for each exercise},
+      enlarge y limits=false,
+      axis lines*=left,
+      xlabel={Menu organization},
+      ylabel={Prod. (success rate/selection time)},
+      xmin=1, xmax=8,
+      ymin=30, ymax=55,
+      xtick=data,
+      ytick={30,35,40,45,50,55},
+      legend pos=east,
+      legend columns=0,
+      %xmajorgrids=true,
+      ymajorgrids=true,
+      grid style=dashed,
+      enlargelimits=0.15,
+      %histogram related :
+      ybar,
+      symbolic x coords={1,2,3,4,5,6,7,8},
+      nodes near coords,
+      every node near coord/.append style={
+	  /pgf/number format/fixed zerofill,
+	  /pgf/number format/precision=1
+      }
+      ]
+      
+    \addplot[green!70!black, fill=green!40] coordinates
+    {(1,38.707) (2,39.514) (3,39.37) (4,43.515) (5,48.371) (6,42.494)
+     (7,42.063) (8,42.834)};
+    
+    %\legend{Men, Women}
+    
+    \end{axis}
+  \end{tikzpicture}}
+  \caption{Productivity ratio for each menu organization.}
+  \label{fig:selectime}
+  \end{subfigure}
+  \caption{}

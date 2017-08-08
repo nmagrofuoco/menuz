@@ -1,0 +1,49 @@
+\chapter{Introduction}
+Since the initial drawings of Charles Babbage and the first modern computer 
+built by Konrad Zuse, computer technology has evolved and spread around the 
+globe as ever before. Initially dedicated and used by a few IT professionals, 
+the advent of personal computing radically changed the game and made everyone a 
+potential computer user \cite{hci}. Computer providers faced serious usability 
+issues with the initial command dialogs. Some still recognized brands took 
+advantage of innovative and creative minds to overcome these problems.\newline
+
+Unfortunately the effectiveness of their solutions has often not been 
+scientifically proved. In the early 1980s, some computer scientists showed great 
+interest into assessing the usability of the traditionally designed UI's. An 
+area of research and practice called \enquote{human-computer interaction} - and 
+commonly referred to as \textit{HCI} - started to emerge along with these 
+scientists. They focused on studying the information transfer between humans 
+and computers. Later they even started to imagine and develop their own UI 
+solutions to enhance UX.\newline
+
+Last decade saw the rise of mobile technologies. Minimising computer components 
+has always been a common interest for computer manufacturers. Smartphone in the 
+hand, tablet in the other. People have become keen of these microtechnologies. 
+Unfortunately they raised new issues. Among them, the complexification of UI has 
+become an increasing problem for users, especially for novices. We come to a 
+point where humans themselves must adapt to the technology and HCI has still a 
+long road ahead.
+
+\section{Objectives}
+This master thesis was initially focused on the conception, the design and the 
+testing of a split menu for smartphone. Starting with the guidelines proposed 
+by Sears and Shneiderman \cite{sears} almost 20 years ago, the main objective 
+was to formulate a new set of guidelines based on the small size of smartphone 
+touching screens. An intense review of the field of study brang us to take into 
+account diverse approaches. %TODO usability à definir et dire qu'on cherche à 
+%l'evaluer
+
+\section{Structure of the written dissertation}
+The written dissertation is organized as follows :
+
+\begin{enumerate}
+  \item textbf{State of the Art}: the first chapter is the starting point of 
+the study. It provides a deep review of the field of research and presents the 
+assumptions over which the entire experiment was built.
+  \item \textbf{Methodology}: the second chapter describes the methodology used 
+to conceive the experiment. It describes the initial hypotheses, the operation 
+of the experimental method which was conducted with participants and finally 
+describes the implementation of the application used to conduct the experiment.
+\end{enumerate}
+
+

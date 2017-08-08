@@ -1,0 +1,77 @@
+\centering
+    \begin{tikzpicture}[node distance=0.8cm]
+        \tikzstyle{item}
+	  =[draw, rectangle, text width=5.5cm, 
+	  minimum height=0.5cm, text centered]
+	\tikzstyle{item_xs}
+	  =[draw, rectangle, text width=3cm, 
+	  minimum height=0.5cm, text centered]
+	\tikzstyle{item_xl}
+	  =[draw, rectangle, text width=6.4cm, 
+	  minimum height=0.5cm]
+	
+	\node[item] (main)
+	  {MainActivity.java};
+	\node[item] (intro)
+	  [below= 1.5cm of main]{IntroductionActivity.java};
+	\node[item] (menuintro)
+	  [below= 1.5cm of intro]{MenuIntroductionActivity.java};
+	\node[item] (nextselection)
+	  [below= 1.5cm of menuintro]{NextSelectionActivity.java};
+	\node[item_xl, fill=gray!20] (menu)
+	  [below= 1.5cm of nextselection] 
+	  {\footnotesize{MenuActivity.java\\ 
+	  MinimisedMenuActivity.java\\
+	  SplitMenuActivity.java\\
+	  MinimisedSplitMenuActivity.java\\
+	  ResponsiveMenuActivity.java\\
+	  ResponsiveSplitMenuActivity.java\\
+	  MinimisedResponsiveMenuActivity.java\\
+	  MinimisedResponsiveSplitMenuActivity.java}};
+	 
+	\node[item_xs, dashed] (utility)
+	  [left= 4cm of nextselection] {Utility.java};
+	\node[item] (survey)
+	  [above= 3.6cm of utility] {SurveyRequestActivity.java};
+	 
+	\node[] (end_evalb)
+	  [left=6cm of menuintro] {\footnotesize{an evaluation}};
+	\node[] (end_evala)
+	  [above=-3pt of end_evalb] {\footnotesize{at the end of}};
+	\node[] (end_evalc)
+	  [below=-3pt of end_evalb] {\footnotesize{session}};
+	  
+	\node[] (to_nextb)
+	  [above left=0cm and 1.3cm of menuintro] 
+	  {\footnotesize{evaluation session}};
+	\node[] (to_nexta)
+	  [above=-3pt of to_nextb] {\footnotesize{to the next}};
+	  
+	\node[] (to_nextd)
+	  [below left=0cm and 1.75cm of menuintro] 
+	  {\footnotesize{to the next}};
+	\node[] (to_nexte)
+	  [below=-3pt of to_nextd] {\footnotesize{training session}};
+	  
+	\node[] (to_nextc)
+	  [below left=-0.2cm and 0.5cm of nextselection] 
+	  {\footnotesize{to the next selection}};
+	
+	\node[] (end)
+	  [left= 6cm of main] {\footnotesize{at the end of}};
+	\node[] (end b)  
+	  [below=-3pt of end]{\footnotesize{the experiment}};
+	
+	\draw[-latex] (main)--(intro);
+	\draw[-latex] (intro)--(menuintro);
+	\draw[-latex] (menuintro)--(nextselection);
+	\draw[-latex] (nextselection)--(menu);
+	
+	\draw[-latex] (menu)-|(utility);
+	\draw[-latex] (utility)--(survey);
+	\draw[-latex] (utility)--(nextselection);
+	\draw[-latex] (utility.30)|-(menuintro.185);
+	\draw[-latex] (survey.330)|-(menuintro.175);
+	\draw[-latex] (survey)|-(main);
+    \end{tikzpicture}
+    \caption{Application architecture.}

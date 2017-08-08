@@ -1,0 +1,85 @@
+<resources>
+       <string name="app_name">Menuz</string>
+       <string name="welcome_participant">Bienvenue cher participant!</string>
+       <string name="button_start">Commencer l\'expérience</string>
+       <string name="plaintext_editparticipant">Entrer votre nom</string>
+
+       <string name="button_go">Prêt</string>
+       <string name="button_ok">Bien compris!</string>
+       <string name="id_nextword">Le prochain objet à sélectionner est :</string>
+       <string name="id_evaluationstarts">La session d\'évaluation débute désormais et durera 10 sélections :</string>
+       <string name="button_firstnext">Passer au premier menu</string>
+       <string name="button_nextmenu">Passer au menu suivant</string>
+
+       <string name="id_introduction1">Bienvenue dans Menuz!</string>
+       <string name="id_introduction2">Cette application a été développée par Nathan Magrofuoco dans le cadre d\'un mémoire de la Louvain School of Management (LSM, UCL). Elle a pour objectif d\'évaluer l\'expérience utilisateur vis-à-vis de 8 menus distincts.</string>
+       <string name="id_introduction3">L\'expérience sera jalonnée de \"sélections\" : nous vous proposerons un objet et vous devrez retrouver celui-ci dans le menu exposé.</string>
+       <string name="id_introduction4">Les 8 menus vous seront présentés individuellement avant utilisation. Vous procéderez en premier lieu à une session d\'entraînement pour chaque menu. Une session d\'entraînement dure 2 sélections.</string>
+       <string name="id_introduction5">Ensuite, vous procéderez à une session d\'évaluation pour chaque menu. Une session d\'évaluation dure 10 sélections. Inutile de vous presser entre chaque sélection, vos performances ne sont pas évaluées tant que vous n\'avez pas appuyé sur le bouton \"Prêt\".</string>
+
+       <string name="id_menu">Menu 1/8</string>
+       <string name="id_menu_introduction1">Il existe 4 catégories de 4 objets. Les objets sont affichés verticalement, mais tous les objets ne sont pas visibles à première vue.</string>
+       <string name="id_menu_introduction2">Afin de faire apparaître les objets situés en bas du menu, faites défiler le menu à l\'aide de votre doigt en pratiquant un mouvement de bas en haut.</string>
+
+       <string name="id_paginatedmenu">Menu 2/8</string>
+       <string name="id_paginatedmenu_introduction1">Il existe 4 catégories de 4 objets. Les objets sont répartis en 2 pages au sein desquelles ils sont affichés verticalement.</string>
+       <string name="id_paginatedmenu_introduction2">Chaque page est accessible par des flèches \"avant/après\". Seules 2 catégories de 4 objets sont visibles sur la première page. Utilisez la flèche située dans le coin inférieur droit pour visualiser la seconde page du menu.</string>
+
+       <string name="id_splitmenu">Menu 3/8</string>
+       <string name="id_splitmenu_introduction1">Il existe 4 catégories de 4 objets. Les objets sont affichés verticalement, mais tous les objets ne sont pas visibles à première vue et les 3 premiers objets sont mis en évidence par la couleur bleue. Ils représentent les 3 objets les plus fréquemment sélectionnés. Cette liste d\'objets évoluera donc au gré de l\'expérience et des sélections que vous effectuerez.</string>
+       <string name="id_splitmenu_introduction2">Afin de faire apparaître les objets situés en bas du menu, faites défiler le menu à l\'aide de votre doigt en pratiquant un mouvement de bas en haut.</string>
+
+       <string name="id_paginatedsplitmenu">Menu 4/8</string>
+       <string name="id_paginatedsplitmenu_introduction1">Il existe 4 catégories de 4 objets. Les objets sont répartis en 2 pages au sein desquelles ils sont affichés verticalement. La première page propose également les 3 objets les plus fréquemment sélectionnés, mis en évidence par une couleur bleue. Cette liste d\'objets évoluera donc au gré de l\'expérience et des sélections que vous effectuerez.</string>
+       <string name="id_paginatedsplitmenu_introduction2">Chaque page est accessible par des flèches \"avant/après\". Seuls 8 objets sont visibles sur la première page. Utilisez la flèche située dans le coin inférieur droit pour visualiser la seconde page du menu.</string>
+
+       <string name="id_multicolmenu">Menu 5/8</string>
+       <string name="id_multicolmenu_introduction1">Il existe 4 catégories de 4 objets. Les objets sont répartis en 2 colonnes au sein desquelles ils sont affichés en vis-à-vis.</string>
+       <string name="id_multicolmenu_introduction2">Grâce à cette nouvelle répartition, tous les objets peuvent être affichés à l\'écran.</string>
+
+       <string name="id_multicolpaginatedmenu">Menu 6/8</string>
+       <string name="id_multicolpaginatedmenu_introduction1">Il existe 4 catégories de 4 objets. Les objets sont répartis en 2 pages. Chaque page réparti les objets en 2 colonnes au sein desquelles ils sont affichés en vis-à-vis.</string>
+       <string name="id_multicolpaginatedmenu_introduction2">Chaque page est accessible par des flèches \"avant/après\". Seules 2 catégories de 4 objets sont visibles sur la première page. Utilisez la flèche située dans le coin inférieur droit pour visualiser la seconde page du menu.</string>
+
+       <string name="id_multicolsplitmenu">Menu 7/8</string>
+       <string name="id_multicolsplitmenu_introduction1">Il existe 4 catégories de 4 objets. Les objets sont répartis en 2 colonnes au sein desquelles ils sont affichés en vis-à-vis. Les 3 premiers objets sont mis en évidence par la couleur bleue. Ils représentent les 3 objets les plus fréquemment sélectionnés. Cette liste d\'objets évoluera donc au gré de l\'expérience et des sélections que vous effectuerez.</string>
+       <string name="id_multicolsplitmenu_introduction2">Grâce à cette nouvelle répartition, tous les objets peuvent être affichés à l\'écran.</string>
+
+       <string name="id_multicolpaginatedsplitmenu">Menu 8/8</string>
+       <string name="id_multicolpaginatedsplitmenu_introduction1">Il existe 4 catégories de 4 objets. Les objets sont répartis en 2 pages. Chaque page réparti les objets en 2 colonnes au sein desquels ils sont affichés en vis-à-vis. La première page propose également les 3 objets les plus fréquemment sélectionnés, mis en évidence par une couleur bleue. Cette liste d\'objets évoluera donc au gré de l\'expérience et des sélections que vous effectuerez.</string>
+       <string name="id_multicolpaginatedsplitmenu_introduction2">Chaque page est accessible par des flèches \"avant/après\". Seuls 8 objets sont visibles sur la première page. Utilisez la flèche située dans le coin inférieur droit pour visualiser la seconde page du menu.</string>
+
+       <string name="id_menu_evaluation_introduction1">La première session d\'évaluation est sur le point de commencer.</string>
+       <string name="id_menu_evaluation_introduction2">La prochaine session d\'évaluation est sur le point de commencer.</string>
+
+       <string name="id_previous">&lt;</string>
+       <string name="id_next">&gt;</string>
+
+       <string name="id_trainingsession">Session d\'entraînement</string>
+       <string name="id_evaluationsession">Session d\'évaluation</string>
+
+       <string name="color_silver">Merlot</string>
+       <string name="color_white">Shiraz</string>
+       <string name="color_blue">Chardonnay</string>
+       <string name="color_bordeaux">Cabernet</string>
+       <string name="color_brown">Saturne</string>
+       <string name="color_grey">Vénus</string>
+       <string name="color_indigo">Jupiter</string>
+       <string name="color_yellow">Mercure</string>
+       <string name="color_mauve">France</string>
+       <string name="color_black">Angleterre</string>
+       <string name="color_gold">Espagne</string>
+       <string name="color_orange">Allemagne</string>
+       <string name="color_pink">Noix de pécan</string>
+       <string name="color_red">Noix</string>
+       <string name="color_turquoise">Amande</string>
+       <string name="color_green">Pistache</string>
+
+       <string name="id_survey_title">Questionnaire</string>
+       <string name="id_survey_afterevaluation">Cette session d\'évaluation est désormais terminée. Vous allez bientôt être redirigé vers la session d\'évaluation du prochain menu.</string>
+       <string name="id_survey_afterevaluation2">Avant de visualiser ces informations, veuillez répondre aux 9 points suivants du questionnaire, partie</string>
+       <string name="id_experiment_ended">L\'expérience est désormais terminée. Veuillez répondre aux derniers points du questionnaire et remettre celui-ci à votre instructeur.</string>
+       <string name="id_experiment_ended2">Nous vous remercions chaleureusement d\'avoir pris part à cette étude. N\'hésitez pas à nous laisser votre ressenti final !</string>
+       <string name="button_continue_experiment">Continuer l\'expérience</string>
+       <string name="button_back_home">Retourner à l\'accueil</string>
+   </resources>

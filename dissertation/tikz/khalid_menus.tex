@@ -1,0 +1,139 @@
+\centering
+    \begin{tikzpicture}[node distance=0.8cm]
+        \tikzstyle{item}
+	  =[draw, fill=gray!20, rectangle, text width=2cm, 
+	  minimum height=0.5cm, text centered]
+	\tikzstyle{button}
+	=[draw, square, text width=0.5cm, minimum height=0.6cm, text centered]
+	\tikzstyle{radio_button}
+	=[draw, square, text width=0.2cm, minimum height=0.4cm, text centered]
+	
+	\node[item] (A)
+	  {Item B};
+	\node[item] (B)
+	  [below=3pt of A] {Item A};
+	\node[item] (C)
+	  [below=3pt of B] {Item C};
+	\node[item] (D)
+	  [below=3pt of C] {Item D};
+	\node[item] (E)
+	  [below=3pt of D] {Item J};
+	\node[item] (F)
+	  [below=3pt of E] {Item F};
+	\node[item] (G)
+	  [below=3pt of F] {Item G};
+	\node[item] (H)
+	  [below=3pt of G] {Item H};
+	\node[item] (I)
+	  [below=3pt of H] {Item I};
+	\node[item] (J)
+	  [below=3pt of I] {Item E};
+	\node[button] (up)
+	  [above left=3pt and -0.8cm of A]{$\wedge$};
+	\node[button] (down)
+	  [above right=3pt and -0.8cm of A]{$\vee$};  
+	\node[] (1)
+	  [above=1.2cm of A]{(1)};
+	
+	\node[item,fill=gray!50] (A2)
+	  [right=0.5cm of A]{Item B};
+	\node[item,fill=gray!50] (B2)
+	  [below=3pt of A2] {Item F};
+	\node[item,fill=gray!80] (C2)
+	  [below=3pt of B2] {Item A};
+	\node[item,fill=gray!80] (D2)
+	  [below=3pt of C2] {Item H};
+	\node[item] (E2)
+	  [below=3pt of D2] {Item C};
+	\node[item] (F2)
+	  [below=3pt of E2] {Item D};
+	\node[item] (G2)
+	  [below=3pt of F2] {Item E};
+	\node[item] (H2)
+	  [below=3pt of G2] {Item G};
+	\node[item] (I2)
+	  [below=3pt of H2] {Item I};
+	\node[item] (J2)
+	  [below=3pt of I2] {Item J};
+	\node[] (2)
+	  [above=1.2cm of A2]{(2)};
+	
+	\node[item,fill=gray!50] (A3)
+	  [right=0.5cm of A2]{Item B};
+	\node[item] (B3)
+	  [below=3pt of A3] {Item A};
+	\node[item] (C3)
+	  [below=3pt of B3] {Item C};
+	\node[item,fill=gray!50] (D3)
+	  [below=3pt of C3] {Item D};
+	\node[item] (E3)
+	  [below=3pt of D3] {Item J};
+	\node[item,fill=gray!50] (F3)
+	  [below=3pt of E3] {Item F};
+	\node[item,fill=gray!50] (G3)
+	  [below=3pt of F3] {Item G};
+	\node[item] (H3)
+	  [below=3pt of G3] {Item H};
+	\node[item] (I3)
+	  [below=3pt of H3] {Item I};
+	\node[item] (J3)
+	  [below=3pt of I3] {Item E};
+	\node[button] (up)
+	  [above left=3pt and -0.8cm of A3]{$\wedge$};
+	\node[button] (down)
+	  [above right=3pt and -0.8cm of A3]{$\vee$};  
+	\node[] (3)
+	  [above=1.2cm of A3]{(3)};
+	  
+	\node[item] (A4)
+	  [right=0.5cm of A3]{Item B};
+	\node[item] (B4)
+	  [below=3pt of A4] {Item D};
+	\node[item] (C4)
+	  [below=3pt of B4] {Item F};
+	\node[item] (D4)
+	  [below=3pt of C4] {Item G};
+	\node[item] (E4)
+	  [below=3pt of D4] {Item A};
+	\node[item] (F4)
+	  [below=3pt of E4] {Item C};
+	\node[button] (down4)
+	  [below=3pt of F4] {$\vee$};
+	\node[] (4)
+	  [above=1.2cm of A4]{(4)};
+	  
+	\node[item,fill=gray!50] (A5)
+	  [right=0.5cm of A4]{Item B};
+	\node[item,fill=gray!50] (B5)
+	  [below=3pt of A5] {Item D};
+	\node[item,fill=gray!50] (C5)
+	  [below=3pt of B5] {Item F};
+	\node[item,fill=gray!50] (D5)
+	  [below=3pt of C5] {Item G};
+	\node[item] (E5)
+	  [below=3pt of D5] {Item A};
+	\node[item] (F5)
+	  [below=3pt of E5] {Item C};
+	\node[item] (G5)
+	  [below=3pt of F5] {Item E};
+	\node[item] (H5)
+	  [below=3pt of G5] {Item H};
+	\node[item] (I5)
+	  [below=3pt of H5] {Item I};
+	\node[item] (J5)
+	  [below=3pt of I5] {Item J};
+	\node[] (5)
+	  [above=1.2cm of A5]{(5)};
+	\node[radio_button] (rec)
+	  [above left=3pt and -0.5cm of A5] {};
+	\node[radio_button] (freq)
+	  [above=3pt of rec] {x};
+	\node (freq_text)
+	  [right=3pt of freq]{Frequency};
+	\node (rec_text)
+	  [right=3pt of rec]{Recency};
+    \end{tikzpicture}
+    \caption{\textsc{Al-Omar} and \textsc{Rigas}' menu organizations with 10 
+items : (1) 
+adaptable, (2) adaptive split, (3) adaptive/adaptable highlighted, (4) 
+adaptive/adaptable minimised and (5) mixed-initiative menus.}

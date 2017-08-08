@@ -1,0 +1,35 @@
+\centering
+\begin{tikzpicture}
+    \begin{axis}[
+      %title={Evolution of student participation for each exercise},
+      enlarge y limits=false,
+      enlarge x limits=-1,
+      height=6cm,
+      width=14.5cm,
+      axis lines*=left,
+      xlabel={Type of mistake},
+      ylabel={\# errors},
+      %xmin=1, xmax=4,
+      ymin=0, ymax=10,
+      xtick=data,
+      ytick={0,2,4,6,8,10},
+      legend pos=east,
+      legend columns=0,
+      %xmajorgrids=true,
+      ymajorgrids=true,
+      grid style=dashed,
+      enlargelimits=0.15,
+      %histogram related :
+      ybar,
+      symbolic x coords={forgetting, imprecision, inattention, confusion},
+      nodes near coords,
+      ]
+      
+    \addplot[orange!70!black, fill=orange!40] coordinates
+    {(forgetting,9) (imprecision,6) (inattention,4) (confusion,3)};
+    
+    %\legend{Men, Women}
+    
+    \end{axis}
+  \end{tikzpicture}
+  \caption{Distribution of errors among the 4 identified types of mistakes.}

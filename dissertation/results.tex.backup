@@ -1,0 +1,423 @@
+\chapter{Results}
+
+During the experiment, some interesting properties were assessed using the 
+survey paper while other parameters were recorded by the Android application. 
+This chapter aims to collect, classify and analyze these records to 
+achieve 3 objectives. First, to confirm or reverse the hypotheses, then 
+possibly to formulate new hypotheses and finally to assess the usability of 
+new menu organizations. As explained earlier, usability is measured with 3 
+interesting properties : (1)  effectiveness, (2) efficiency and (3) 
+satisfaction. This section first describes the participants who took part to 
+the experiment and then analyzes these usability-related properties one after 
+the other. The hypotheses are finally discussed at the end of the chapter.
+
+\section{Participants}
+
+The study was conducted with 18 French speaking subjects between 17 and 61 
+years old. To avoid bias due to language, the application and the survey 
+used during the experiment were translated in French. Half the participants 
+were men while the other half was women. Parity gender was therefore 
+achieved.\newline
+
+The subjects come from various backgrounds that we have grouped in 4 
+distinct categories : (1) engineers, (2) art school students/workers, (3) other 
+academics, and (5) others. \textit{Engineers} and \textit{art school 
+students/workers} were enough to get their own representative 
+category. \textit{Other academics} consisted of 1 law student, 1 foreign 
+language student, 1 psychology student and 1 physical education student. 
+Finally, 2 
+administrative employees, 1 worker, 1 saleswoman and 1 pupil were part of the 
+last category called \textit{others}. Figure \ref{fig:participants} (a) depicts 
+the distribution of participants according to their educational background. It 
+also highlights the distribution of men and women among these categories. 
+Notice that men are mainly representing engineering and artistic careers in our 
+participant sample. Women are mostly representing other academics and 
+other careers. Therefore parity gender is not well represented by a 
+distribution based on the educational background.
+
+\begin{figure}[!ht]
+    \include{tikz/participants}
+    \label{fig:participants}
+\end{figure}
+
+Figure \ref{fig:participants} (b) depicts the distribution 
+of participants according to their age group. It also highlights gender 
+distribution. Most participants were between 18 and 25 but each age group was 
+at 
+least represented once during the experiment. We were able to form and use the 
+3 
+following groups of participants during the analysis : (1) <25, (2) 25-40 and 
+(3) >40 years old. Parity gender is very well represented among these 
+categories. Therefore it can be appropriate to distinguish gender and age groups 
+during the analysis.\newline
+
+Participants were also asked to rate their skills with smartphones and 
+touch screen technologies. The objective was to differentiate 2 groups of 
+subjects: (1) novice and (2) master users. Unfortunately, smartphone users 
+and touch screens are becoming more common nowadays and we haven't found 
+enough 
+novice users for the experiment. Even subjects without smartphones considered 
+themselves rather efficient with touch screens and 
+smartphones. Therefore we won't be able to prove the 6th hypothesis which was 
+about novice users and their preference for adaptive menus. Figure 
+\ref{fig:participants_skills} illustrates the distribution of participants' 
+responses about their skills with smartphones and 
+touch screens. Notice that a rating ranging from 1 (bad) to 7 (excellent) was 
+at their disposal to assess their abilities.
+
+\begin{figure}[!ht]
+    \include{tikz/participants_skills}
+    \label{fig:participants_skills}
+\end{figure}
+
+\section{Effectiveness}
+Effectiveness is the first property to evaluate in order to assess the 
+usability of a menu organization. According to the Oxford English Dictionary, 
+effectiveness can be defined as \enquote{the degree to which something is 
+successful in producing a desired result; success} \cite{effectiveness}. In 
+1998, effectiveness was defined more precisely by HCI researchers in 
+the ISO9241-11 standard which describes it as \enquote{the accuracy and 
+completeness of users' 
+tasks while using a system} \cite{iso}. Indeed, when using the 
+menu of a computer system, a user wishes to fulfill a precise action - e.g. 
+saving a document - and must press the related menu item - e.g. save - in order 
+to execute this action. In other words, the effectiveness of a menu 
+organization can be assessed by observing its average error rate. A low error 
+rate means that users have managed to produce the desired results by pressing 
+the correct buttons during the experiment. The control condition menu 
+displayed 
+by \textit{MenuActivity} can be used to benchmark the effectiveness between 
+menu organizations. A lower error rate than \textit{MenuActivity} means that 
+users have managed to produce the desired results more frequently with new menu 
+organizations.\newline
+
+Figure \ref{fig:errors} (a) depicts the average error rate for each 
+menu organization. The control condition menu (1) and the split menu (3) seem 
+to be the worst menu organizations in terms of effectiveness. Moreover new menu 
+organizations show promising results as users achieved lower error rates 
+by using them. Even more promising, users did not commit any mistake while 
+using the responsive menu (5). However notice that the worst 
+average error rate does not even exceed $3.33\%$. In conclusion, all 
+the displayed menu organizations can be considered as greatly effective.
+
+\begin{figure}[!ht]
+    \include{tikz/errors}
+    \label{fig:errors}
+\end{figure}
+
+Figure \ref{fig:errors} (b) depicts the average error rate according to 
+the age group. It also highlights gender distinction and shows that men are 
+slightly less effective than women. In general, they commit more mistakes than 
+women. However women tend to commit more and more errors over the years. Older 
+participants show the worst average error rate while the intermediary age group 
+shows the best average error rate.
+
+\begin{figure}[!ht]
+    \include{tikz/errors_participants}
+    \label{fig:errors_participants}
+\end{figure}
+
+It is finally interesting to observe more precisely the errors performed during 
+the experiment. We can first notice that nearly half the mistakes were 
+performed by 2 participants. Indeed, these subjects made 4 and 5 errors 
+which is respectively 4 and 5 times greater than the average number of 
+mistakes performed by each participant. Figure \ref{fig:errors_participants} 
+illustrates the distribution of errors among the subjects of the 
+experiment. A more in-depth analysis of mistakes allowed us to identify 4 
+types of errors : (1) forgetting, (2) touch screen imprecision, (3) 
+inattention and (4) confusion. During the study, some participants 
+complained about \textit{forgetting} the required item because it disappeared 
+once the menu was displayed. The problem occured 9 times as illustrated 
+by Figure \ref{fig:errors_types}. It corresponds to nearly half the mistakes 
+performed during the study. Touch screen \textit{imprecision} also occured a 
+few times. It happened for example when subjects ended up pressing on a button 
+instead of scrolling down the menu, or when subjects ended up pressing on a 
+button above or below the desired item. The third type of mistake called 
+\textit{inattention} occured when the hot list of a split menu was updated and
+users were not attentive enough to these changes. Therefore, they ended up 
+pressing on a wrong button. Finally, \textit{confusion} happened a few times 
+between the words \enquote{Germany} and \enquote{England}, and \enquote{Walnut} 
+and \enquote{Pecan} due to the fact that these words are pretty close to each 
+others in french (Allemagne/Angleterre and Noix/Noix de Pecan).
+
+\begin{figure}[!ht]
+    \include{tikz/errors_types}
+    \label{fig:errors_types}
+\end{figure}
+
+\section{Efficiency}
+Effiency is the second interesting property to observe when assessing menu 
+usability. According to the Oxford English Dictionary, efficiency is defined as 
+\enquote{the ratio of the useful work performed by a machine or in a process to 
+the total energy expended or heat taken in} \cite{efficiency}. In 1998, HCI 
+researchers defined the term more rigourously with the ISO9241-11 standard. 
+They described it as \enquote{the resources expended by the user in relation to 
+the 
+accuracy and completeness of goals achieved} \cite{iso}. In other 
+words, a computer system is said to be efficient if users manage to reach 
+their goals while expending as little resources as possible. Therefore we 
+should 
+focus on observing lower selection time for new menu organizations compared to 
+the 
+control condition menu. It is also relevant to adopt a \textit{productivity} 
+approach such that we can observe the ratio of successful selection rate 
+(useful output) to average required selection time (input). Figure 
+\ref{fig:selectime} (a) depicts the average selection time for 
+each menu organization. It shows that all menu organizations reduce the 
+selection time in comparison to the control condition menu (1), except for the 
+minimised menu (2) which slightly increases this value. The responsive 
+menu (5) is once again the most performant one. Figure 
+\ref{fig:selectime} (b) illustrates the productivity ratio for each menu 
+organization. All menu organizations can be considered as more efficient than 
+the traditional menu. The productivity approach also confirms that the 
+responsive menu is the most performant one. Indeed it provides the best results 
+in terms of effectiveness (lower error rate) and efficiency (lower selection 
+time).
+
+\begin{figure}[!ht]
+    \include{tikz/selectime}
+    \label{fig:selectime}
+\end{figure}
+
+Figure \ref{fig:selectime_agegender} depicts the productivity according 
+to the age group and highlights gender distinction. It is first 
+interesting to notice that younger participants are more productive 
+than older ones. In average, men are also more productive than women. We 
+observed in the previous section that women are more effective than men 
+because they are performing less mistakes. However men perform selection 
+faster than women and therefore their productivity ratio is slightly 
+better.
+
+\begin{figure}[!ht]
+    \include{tikz/selectime_agegender}
+    \label{fig:selectime_agegender}
+\end{figure}
+
+\section{Satisfaction}
+Usability is finally and mostly influenced by user satisfaction. Subjects may 
+feel productive but uncomfortable with a given menu organization and its 
+underlying operation. The survey paper was mainly focused on gathering users' 
+thoughts. The idea was to evaluate how each user was personally \textit{feeling} 
+and \textit{perceiving} each menu. There are 6 interesting sentences from 
+the survey paper useful to assess user satisfaction :
+\begin{enumerate}
+  \item I felt productive using this menu.
+  \item I found this menu easy to use.
+  \item I think this menu requires some improvement.
+  \item I found this menu well integrated into the smartphone.
+  \item I noticed some problems with this menu.
+  \item I was frustrated by the menu design.
+\end{enumerate}
+Subjects had to rate each sentence with a value ranging from 1 (disagree) 
+to 7 (agree). Figure \ref{fig:satisfaction_ratio} illustrates the average 
+satisfaction ratio for each menu organization. First, a satisfaction ratio was 
+computed for each participant and for each menu organization. This ratio 
+comprises the values expressed by the participant for each sentence and was 
+returned on a scale of 7. The 3rd, 5th and 6th sentence values were inversed 
+because 
+agreeing with the fact that a menu requires some improvement, contains 
+problems or is frustrating to use is negative for user satisfaction. It is also 
+interesting to notice 
+that values from 3 participants were considered as invalid. Indeed they 
+responded with the value 7 for each sentence of the survey. Finally, the 
+average 
+satisfaction ratio was computed for each menu organization in order to gather 
+all ratios into a single one. This final ratio proves that subjects were in 
+general mostly satisfied by the menus designed for the experiment. The control 
+condition menu was perceived as the most satisfying while the responsive split 
+menu (6) and the responsive minimised split menu (8) were perceived as the less 
+satisfying menu organizations. The responsive menu (5) which showed great 
+effiency and great effectiveness in the previous sections also received a very 
+good satisfaction ratio. Figure \ref{fig:satisfaction_gender} depicts the 
+average satisfaction ratio for each menu organization and it highlights the 
+gender distinction. It shows that men were more more satisfied than women about 
+new menu organizations. The traditional menu (1) received a better satisfaction 
+from women instead.
+
+\begin{figure}[!ht]
+    \include{tikz/satisfaction_ratio}
+    \label{fig:satisfaction_ratio}
+\end{figure}
+
+\begin{figure}[!ht]
+    \include{tikz/satisfaction_gender}
+    \label{fig:satisfaction_gender}
+\end{figure}
+
+At the end of the experiment, participants were asked to \textit{rank} the menu 
+organizations in order of preference and such that a menu ranked at the first 
+place was considered as the most preferred menu by the subject. Figure 
+\ref{fig:rankings} depicts the average ranking received by each menu 
+organization. The traditional (1) and responsive menus (5) were mostly 
+preferred by the subjects of the experiment. The responsive minimised split menu 
+(8) was by far the less preferred menu. It was ranked by 11 participants as the 
+worst menu organization.
+
+\begin{figure}[!ht]
+    \include{tikz/rankings}
+    \label{fig:rankings}
+\end{figure}
+
+\section{Confirming, reversing and updating hypotheses}
+The objective of the experiment was to confirm or reverse an initial set of 
+11 hypotheses. The results analyzed in the previous sections have led us to 
+undertake interesting observations. This section finally aims to confirm, 
+reverse and update the initial assumptions based on these observations in order 
+to conclude our study.
+
+\subsection{Hypotheses and usability}
+In the previous sections, we performed an in-depth analysis of 3 
+usability-related properties : (1) effectiveness, (2) efficiency and (3) 
+satisfaction. Effectiveness was measured by comparing the average error rate 
+between the control condition menu and the new menu organizations. Therefore, 
+this property will help us to confirm or reverse hypotheses based on the fact 
+that some menu organizations may \textit{reduce the error rate}. The efficiency 
+analysis was based on identifying \textit{selection time reduction} and 
+eventually \textit{productivity enhancement}. Finally, user satisfaction was 
+measured for and between each menu organization. It helped us to identify 
+\textit{user preference} for some menu organizations.\newline
+
+Selection time and user preference were already mentioned by the 11 initial 
+hypotheses. Two types of hypothesis must now be added up to each 
+menu organization. These assumptions are about error rate and productivity 
+which were not taken into account at the beginning of our study. These 
+additional hypotheses are formulated below :
+
+\begin{itemize}
+ \item \textbf{H1c :} the split menu reduces the error rate.
+ \item \textbf{H1d :} the split menu enhances the productivity.
+ \item \textbf{H2c :} the minimised menu reduces the error rate.
+ \item \textbf{H2d :} the minimised menu enhances the productivity.
+ \item \textbf{H3c :} the responsive menu reduces the error rate.
+ \item \textbf{H3d :} the responsive menu enhances the productivity.
+\end{itemize}
+
+
+\subsection{Split menu}
+In 1994, \textsc{Sears} and \textsc{Shneiderman} proved that split menu 
+was reducing the selection time and receiving a greater user preference at the 
+same time for desktop computer system. Unfortunately our experiment based on 
+mobile systems did not show promising results. During the experiment, the split 
+menu provided the same average error rate than a traditional menu ($3.33\%$). 
+It appears that it also slightly increased the average selection time ($2.52s$ 
+instead of $2.5s$ for the control condition menu).\newline
+
+In conclusion, the split menu does \textit{not} reduce the error rate, nor the 
+selection time in the presence of a mobile system. It was also \textit{not} 
+preferred over the traditional menu. Therefore, all the hypotheses based on the 
+split menu have to be reversed.
+
+\subsection{Minimised menu}
+The minimised menu was meant to help users to identify the desired item 
+quicker by reducing the number of displayed items. At first glance, the 
+experiment showed promising results. Indeed, the minimised menu provided the 
+second lower average error rate with $0.56\%$ only. Unfortunately, this menu 
+organization did not allow to reduce the selection time. The productivity of 
+users was slightly increased but still remains unsignificant to be recognized. 
+Finally, users were satisfied by the minimised menu organization but did not 
+prefer it over the traditional menu.\newline
+
+In conclusion, the minimised menu help users to reduce their error rate. 
+However, it is not sufficient to reduce their selection time, nor their 
+productivity, and it was not recognized as a preference. Therefore, we are 
+only able to confirm one hypothesis :
+
+\begin{itemize}
+ \item \textbf{H2c :} the minimised menu reduces the error rate.
+\end{itemize}
+
+\subsection{Responsive menu}
+Yusuke \textsc{Fukazawa} was the first researcher to publish results based on a 
+a responsive menu organization. The idea was to adapt the menu organization to 
+the small size of mobile screens. The responsive menu provided great results. 
+First, users managed to achieve a $0\%$ average error rate by using this new 
+menu organization. They also achieved the lower average selection time and 
+therefore, the higher productivity ratio. The responsive menu received the 
+better satisfaction ratio along with the traditional menu and was preferred 
+over all menu organizations.\newline
+
+In conclusion, we managed to prove the 4 hypotheses formulated about responsive 
+menus :
+
+\begin{itemize}
+ \item \textbf{H3a :} the responsive menu reduces the selection time.
+ \item \textbf{H3b :} the responsive menu is preferred by users.
+ \item \textbf{H3c :} the responsive menu reduces the error rate.
+ \item \textbf{H3d :} the responsive menu enhances the productivity.
+\end{itemize}
+
+\subsection{Novice and master users}
+Yusuke \textsc{Fukazawa} also noticed that novice and master users usually 
+express different preferences regarding new menu organizations. Unfortunately, 
+the participants of the experiment were mainly master and frequent smartphone 
+users. Therefore, we can only prove the assumptions made on the master 
+users and we have to dismiss the assumptions about the novices. Eventhough 
+these frequent users expressed a great satisfaction to all menu organizations, 
+they mainly ranked the traditional and responsive menus as their favorite 
+ones.\newline
+
+In conclusion, we can only confirm one hypothesis :
+
+\begin{itemize}
+ \item \textbf{H4b :} master users show a preference for the traditional menu.
+\end{itemize}
+
+\subsection{Guidance informations and period of adjustment}
+The survey paper was also used to gather users' thoughts about the guidance 
+informations and the period of adjustment. There were 3 interesting sentences 
+to analyze the impact of these notions on menu usability. Each sentence had to 
+be rated on a scale ranging from 1 (disagree) to 7 (agree) for each menu 
+organization. These sentences are listed below :
+
+\begin{enumerate}
+ \item I found this menu presented as expected.
+ \item I needed to learn more this menu.
+ \item I needed more guidance informations about this menu.
+\end{enumerate}
+
+The 1st and last sentences are helpful to assess the quality of the guidance 
+informations provided at the beginning of each training session. Figure 
+\ref{fig:guidance} depicts the average rating received for these sentences for 
+each menu organization. According to these ratings, the subjects of the 
+experiment were very satisfied by the quality of the guidance informations. 
+They found menus were all organized as expected and guidance informations were 
+sufficient for them to understand new menu organizations.\newline
+
+During the experiment, the participants were first able to train themselves 
+with each menu organization for 2 consecutive selections only. Then, they were 
+asked if this period of adjustment was long enough according to them. The 
+second sentence described above is interesting to evaluate this objective. 
+Figure \ref{fig:period} depicts the average rating received for this sentence 
+for each menu organization. The results are very prositive. Indeed, users have 
+agreed to rate the period of adjustment long enough for all menu 
+organizations.\newline
+
+In conclusion, the guidance informations and the period of adjustment have been 
+widely appreciated by the participants of the experiment. However we haven't 
+tested the experiment without these notions. Therefore, we cannot take proper 
+conclusions on the fact that they help users to handle a menu organization more 
+efficiently. Since users appreciated the quantity and quality of the provided 
+guidance informations, we can only prove the following hypothesis :
+
+\begin{itemize}
+ \item \textbf{H5a :} guidance informations help users to understand how a menu 
+works.
+\end{itemize}
+
+\begin{figure}[!ht]
+    \include{tikz/guidance}
+    \label{fig:guidance}
+\end{figure}
+
+\begin{figure}[!ht]
+    \include{tikz/period}
+    \label{fig:period}
+\end{figure}
+
+\subsection{Mixed-initiative menus}
+The experiment was also set up with 3 mixed-initiative menus which combined 
+split, responsive and/or minimised properties. The idea was to implement 
+complementary menu organizations and benefit from their respective advantages. 
+The first results were encouraging as all these mixed-initiative menus 
+provided a lower average error rate. The responsive split minimised menu even 
+provided the second lower average error rate with $0.56\%$.
