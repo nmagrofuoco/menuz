@@ -56,3 +56,11 @@ freeline_project_description.json
 
 # LaTeX Backup
 .backup
+.aux
+.bbl
+.blg
+.idx
+.out
+.log
+.toc
+

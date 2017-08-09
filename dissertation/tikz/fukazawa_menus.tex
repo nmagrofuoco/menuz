@@ -16,22 +16,22 @@
 	\tikzstyle{item_circle_xl}
 	  =[draw, fill=gray!20, circle, text width=0.8cm, text centered]
 	  
-	\node[item_col] (A)
-	  {Item A};
+	\node[item_col, fill=gray!50] (A)
+	  {Item C};
 	\node[item_col] (B)
-	  [below=3pt of A] {Item C};
+	  [below=3pt of A] {Item A};
 	\node[item_col] (C)
-	  [below=3pt of B] {Item E};
+	  [below=3pt of B] {Item D};
 	\node[item_col] (D)
-	  [below=3pt of C] {Item G};
+	  [below=3pt of C] {Item F};
 	\node[item_col] (E)
 	  [below=3pt of D] {Item I};
-	\node[item_col] (F)
-	  [right=3pt of A] {Item B};
+	\node[item_col, fill=gray!50] (F)
+	  [right=3pt of A] {Item G};
 	\node[item_col] (G)
-	  [below=3pt of F] {Item D};
+	  [below=3pt of F] {Item B};
 	\node[item_col] (H)
-	  [below=3pt of G] {Item F};
+	  [below=3pt of G] {Item E};
 	\node[item_col] (I)
 	  [below=3pt of H] {Item H};
 	\node[item_col] (J)
